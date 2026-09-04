@@ -177,7 +177,8 @@ A plain text file of comma-separated values, the simplest way to store a table.
 
 ### DataFrame
 
-A Pandas table with named columns. Every dataset in this course loads into one.
+A Pandas table with named columns. Every dataset in this course loads into one. The full
+reference: [pandas.DataFrame](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html).
 
 ### f-string
 

@@ -195,7 +195,8 @@ the course's three.
 
 ### list
 
-A Python value that holds several values in order, written in square brackets.
+A Python value that holds several values in order, written in square brackets. Python's own
+tutorial covers them in depth: [docs.python.org, Data Structures](https://docs.python.org/3/tutorial/datastructures.html).
 
 ### notebook and cell
 

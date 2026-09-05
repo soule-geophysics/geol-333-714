@@ -7,7 +7,7 @@ carries the same content.
 
 ### 68-95-99.7 rule
 
-For the normal distribution: about 68% of values land within one standard deviation of the mean, 95% within two, 99.7% within three. The quick test for whether a value's distance from the mean is ordinary scatter.
+For the normal distribution: about 68% of values land within one standard deviation of the mean, 95% within two, 99.7% within three. The quick test for whether a value's distance from the mean is ordinary scatter. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/).
 
 ### accuracy
 
@@ -57,15 +57,15 @@ The field instrument for gravity: a mass on a very soft spring in a rigid case. 
 
 ### histogram
 
-A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line.
+A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
 
 ### least squares
 
-The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 derives it on the board; the homework uses it wherever a slope carries physics.
+The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 derives it on the board; the homework uses it wherever a slope carries physics. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/).
 
 ### mean
 
-The best single value a set of repeated measurements gives: the sum divided by the count.
+The best single value a set of repeated measurements gives: the sum divided by the count. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
 
 ### milligal (mGal)
 
@@ -77,7 +77,7 @@ Every mass pulls every other, along the line between them, with force `F = GMm/r
 
 ### normal distribution
 
-The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule.
+The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/).
 
 ### pendulum length (l)
 
@@ -97,7 +97,7 @@ How tightly repeated measurements agree with each other. Limited by random error
 
 ### probability density function (PDF)
 
-The smooth curve the histogram of a stack of repeated measurements approaches as the stack grows, once the histogram is scaled so its total area is one. The normal distribution is the one our measurements follow.
+The smooth curve the histogram of a stack of repeated measurements approaches as the stack grows, once the histogram is scaled so its total area is one. The normal distribution is the one our measurements follow. Course text: [OpenIntro Statistics §3.5](https://www.openintro.org/book/os/).
 
 ### property contrast
 
@@ -113,7 +113,7 @@ A spring gravimeter reads differences between stations; an absolute gravimeter d
 
 ### residual
 
-A data point's vertical distance from the fitted line. Least squares is the recipe that makes the summed squared residuals as small as possible.
+A data point's vertical miss from the fitted line: the data value minus the fitted value, so it carries a sign. Least squares is the recipe that makes the summed squared residuals as small as possible. Course text: [OpenIntro Statistics §8.1](https://www.openintro.org/book/os/).
 
 ### shell theorem
 
@@ -121,7 +121,7 @@ A uniform sphere pulls on anything outside it as if all its mass sat at its cent
 
 ### slope and intercept
 
-The two numbers a line fit returns. In this course the slope carries the physics (g from the pendulum, a drift rate, the free-air gradient), and the intercept picks up apparatus effects: a constant error in the length moves the line up or down without changing its slope.
+The two numbers a line fit returns. In this course the slope carries the physics (g from the pendulum, a drift rate, the free-air gradient), and the intercept picks up apparatus effects: a constant error in the length moves the line up or down without changing its slope. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/).
 
 ### small-angle approximation
 
@@ -134,11 +134,11 @@ noise by the same square-root-of-N mathematics; Module 3 meets it again.
 
 ### standard deviation (s)
 
-The typical distance of one measurement from the mean of its stack. It reports the scatter of a single trial.
+The typical distance of one measurement from the mean of its stack. It reports the scatter of a single trial. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
 
 ### standard error (SE)
 
-`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain.
+`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: [OpenIntro Statistics §5.1](https://www.openintro.org/book/os/).
 
 ### station
 
@@ -162,7 +162,7 @@ One complete measurement in a stack. In HW0, one 10-swing timing at one pendulum
 
 ### z-score
 
-A measurement rewritten as its distance from the mean of its own stack, in units of standard deviation: `z = (value − mean) / s` (z equals value minus mean, over s). It puts every stack on one axis so the 68-95-99.7 rule can be checked across all of them.
+A measurement rewritten as its distance from the mean of its own stack, in units of standard deviation: `z = (value − mean) / s` (z equals value minus mean, over s). It puts every stack on one axis so the 68-95-99.7 rule can be checked across all of them. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/).
 
 ## Python and Colab terms
 

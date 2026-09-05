@@ -36,6 +36,10 @@ The table of uncertainties a least-squares fit returns. The square roots of its 
 entries are the standard errors of the slope and the intercept, which is where every fitted
 slope's error bar in this course comes from.
 
+### determinant
+
+A single number computed from a square matrix; for a 2x2 it is `ad - bc` (a d minus b c). It tells you whether a system of equations has one answer: when the determinant is zero the two lines are parallel or identical, so there is no unique solution, and the solver calls the system singular.
+
 ### drift
 
 The slow change in a gravimeter's reading while the meter sits still. Two things cause it: the spring slowly stretches, and the tidal effect rides on top. A survey tracks the combined change by re-occupying the base station and corrects each reading by how much had accumulated when it was taken. Our stairwell dataset does exactly this with its two base readings.
@@ -64,9 +68,17 @@ The field instrument for gravity: a mass on a very soft spring in a rigid case. 
 
 A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
+### impedance contrast
+
+The jump in a material property across a boundary that makes the boundary reflect. No jump, no echo, and the boundary is invisible even though it is right there. Each method has its own impedance: sound cares about density and how fast it travels, radar cares about the electrical properties, and water dominates those. Both are mostly set by how much pore space is down there and what is sitting in it, which is why the two often light up the same boundary. Module 3 works the seismic case. Course resource: [Seismic Reflection](https://www.iris.edu/hq/inclass/lesson/seismic_reflection) (EarthScope/IRIS, CC BY 4.0).
+
 ### least squares
 
-The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 derives it on the board; the homework uses it wherever a slope carries physics. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/). Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
+The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 works it on the board; the homework uses it wherever a slope carries physics. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/). Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
+
+### matrix
+
+A rectangular grid of numbers. In this course a matrix carries a whole system of equations at once: Week 2 solves a 2x2 system by hand, then writes the least-squares fit as the normal equations `(AtA)m = Atd` (A transpose A m equals A transpose d) and solves that same 2x2 shape built from 25 data points. The Matrix Methods card in the Math Reference Cards works the 2x2 case by hand.
 
 ### mean
 

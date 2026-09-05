@@ -7,7 +7,7 @@ carries the same content.
 
 ### 68-95-99.7 rule
 
-For the normal distribution: about 68% of values land within one standard deviation of the mean, 95% within two, 99.7% within three. The quick test for whether a value's distance from the mean is ordinary scatter. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/). Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+For the normal distribution: about 68% of values land within one standard deviation of the mean, 95% within two, 99.7% within three. The quick test for whether a value's distance from the mean is ordinary scatter. Course text: OpenIntro Statistics §4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
 
 ### accuracy
 
@@ -28,7 +28,7 @@ The weight on the end of a pendulum's string. Ours is a one-inch metal ball.
 ### correlation
 
 A number between −1 and +1 for how tightly two quantities follow a straight line together, and
-in which direction. Course text: [OpenIntro Statistics §8.1](https://www.openintro.org/book/os/). Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
+in which direction. Course text: OpenIntro Statistics §8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
 
 ### covariance matrix
 
@@ -66,7 +66,7 @@ The field instrument for gravity: a mass on a very soft spring in a rigid case. 
 
 ### histogram
 
-A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### impedance contrast
 
@@ -74,7 +74,7 @@ The jump in a material property across a boundary that makes the boundary reflec
 
 ### least squares
 
-The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 works it on the board; the homework uses it wherever a slope carries physics. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/). Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
+The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 works it on the board; the homework uses it wherever a slope carries physics. Course text: OpenIntro Statistics §8.2. Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
 
 ### matrix
 
@@ -82,12 +82,12 @@ A rectangular grid of numbers. In this course a matrix carries a whole system of
 
 ### mean
 
-The best single value a set of repeated measurements gives: the sum divided by the count. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+The best single value a set of repeated measurements gives: the sum divided by the count. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### median
 
 The middle value once the data are sorted: half the measurements sit below it, half above.
-`describe()` prints it as the 50% row. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+`describe()` prints it as the 50% row. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### milligal (mGal)
 
@@ -105,16 +105,16 @@ Every mass pulls every other, along the line between them, with force `F = GMm/r
 
 ### normal distribution
 
-The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/). Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule. Course text: OpenIntro Statistics §4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
 
 ### outlier
 
 A measurement that sits far from the rest of its stack. One is never deleted silently: the
-analysis states it, then shows the result with and without it. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Outliers in regression](https://www.openintro.org/go?id=video_stat_linear_regression_outliers).
+analysis states it, then shows the result with and without it. Course text: OpenIntro Statistics §2.1. Video: [Outliers in regression](https://www.openintro.org/go?id=video_stat_linear_regression_outliers).
 
 ### pendulum length (l)
 
-The distance from the pivot to the **center** of the bob. A mark at the top of the bob sits half the bob's height above its center. Measuring to the mark and calling it l makes g come out low, by more than the stopwatch scatter.
+The distance from the pivot to the **center** of the bob. A mark at the top of the bob sits half the bob's height above its center. Measuring to the mark and calling it `l` makes `g` come out low when you compute `g` from a single length, by more than the stopwatch scatter. In the multi-length fit of `T²` against `l` (T squared against l), the same constant offset moves the intercept and leaves the slope, so the `g` taken from the slope is unchanged.
 
 ### period (T)
 
@@ -130,7 +130,7 @@ How tightly repeated measurements agree with each other. Limited by random error
 
 ### probability density function (PDF)
 
-The smooth curve the histogram of a stack of repeated measurements approaches as the stack grows, once the histogram is scaled so its total area is one. The normal distribution is the one our measurements follow. Course text: [OpenIntro Statistics §3.5](https://www.openintro.org/book/os/).
+The smooth curve the histogram of a stack of repeated measurements approaches as the stack grows, once the histogram is scaled so its total area is one. The normal distribution is the one our measurements follow. Course text: OpenIntro Statistics §3.5.
 
 ### property contrast
 
@@ -140,7 +140,7 @@ A difference in a physical property (density, how strongly the rock is magnetize
 
 The 25% and 75% rows of `describe()`: one quarter of the data sits below the first quartile,
 three quarters below the third. A percentile generalizes this: the value below which that
-percent of the data sits. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
+percent of the data sits. Course text: OpenIntro Statistics §2.1.
 
 ### random error
 
@@ -152,7 +152,7 @@ A spring gravimeter reads differences between stations; an absolute gravimeter d
 
 ### residual
 
-A data point's vertical miss from the fitted line: the data value minus the fitted value, so it carries a sign. Least squares is the recipe that makes the summed squared residuals as small as possible. Course text: [OpenIntro Statistics §8.1](https://www.openintro.org/book/os/). Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
+A data point's vertical miss from the fitted line: the data value minus the fitted value, so it carries a sign. Least squares is the recipe that makes the summed squared residuals as small as possible. Course text: OpenIntro Statistics §8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
 
 ### shell theorem
 
@@ -160,7 +160,7 @@ A round body whose density depends on how deep you are but not on which way you 
 
 ### slope and intercept
 
-The two numbers a line fit returns. In this course the slope carries the physics (g from the pendulum, a drift rate, the free-air gradient), and the intercept picks up apparatus effects: a constant error in the length moves the line up or down without changing its slope. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/).
+The two numbers a line fit returns. In this course the slope carries the physics (g from the pendulum, a drift rate, the free-air gradient), and the intercept picks up apparatus effects: a constant error in the length moves the line up or down without changing its slope. Course text: OpenIntro Statistics §8.2.
 
 ### small-angle approximation
 
@@ -173,11 +173,11 @@ noise by the same square-root-of-N mathematics; Module 3 meets it again.
 
 ### standard deviation (s)
 
-The typical distance of one measurement from the mean of its stack. It reports the scatter of a single trial. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+The typical distance of one measurement from the mean of its stack. It reports the scatter of a single trial. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### standard error (SE)
 
-`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: [OpenIntro Statistics §7.1](https://www.openintro.org/book/os/), where `SE = s/√n` is worked; §5.1 gives the same idea for a proportion. Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
+`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: OpenIntro Statistics §7.1, where `SE = s/√n` is worked; §5.1 gives the same idea for a proportion. Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
 
 ### station
 
@@ -189,7 +189,7 @@ Read the base station, read the survey stations, then read the base station agai
 
 ### systematic error
 
-An error that pushes every reading in the same direction, so averaging never removes it. Calling a mark at the top of the bob the pendulum length is one. Found by checking assumptions against the apparatus; taking more readings does not reveal it.
+An error that pushes every reading in the same direction, so averaging never removes it. Calling a mark at the top of the bob the pendulum length is one: it makes a single-length `g` come out low, and in the multi-length fit it moves the intercept while leaving the slope. Found by checking assumptions against the apparatus; taking more readings does not reveal it.
 
 ### tidal effect
 
@@ -202,11 +202,11 @@ One complete measurement in a stack. In HW0, one 10-swing timing at one pendulum
 ### variance
 
 The square of the standard deviation. The fit's covariance matrix is built from variances,
-which is why the square roots of its diagonal entries are standard errors. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
+which is why the square roots of its diagonal entries are standard errors. Course text: OpenIntro Statistics §2.1.
 
 ### z-score
 
-A measurement rewritten as its distance from the mean of its own stack, in units of standard deviation: `z = (value − mean) / s` (z equals value minus mean, over s). It puts every stack on one axis so the 68-95-99.7 rule can be checked across all of them. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/). Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+A measurement rewritten as its distance from the mean of its own stack, in units of standard deviation: `z = (value − mean) / s` (z equals value minus mean, over s). It puts every stack on one axis so the 68-95-99.7 rule can be checked across all of them. Course text: OpenIntro Statistics §4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
 
 ## Python and Colab terms
 

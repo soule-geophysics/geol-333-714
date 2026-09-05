@@ -129,7 +129,8 @@ The two numbers a line fit returns. In this course the slope carries the physics
 
 ### stack
 
-A set of repeated measurements of the same thing, treated together. Five timings of one pendulum length are a stack; the stack's mean, standard deviation, and standard error describe it.
+A set of repeated measurements of the same thing, treated together. Five timings of one pendulum length are a stack; the stack's mean, standard deviation, and standard error describe it. The word comes from seismic processing, where stacking repeated traces cancels random
+noise by the same square-root-of-N mathematics; Module 3 meets it again.
 
 ### standard deviation (s)
 

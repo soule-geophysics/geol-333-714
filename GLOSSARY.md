@@ -61,7 +61,7 @@ A bar chart of a set of repeated measurements: each bar counts how many values l
 
 ### least squares
 
-The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 derives it on the board; the homework uses it wherever a slope carries physics. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/).
+The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 derives it on the board; the homework uses it wherever a slope carries physics. Course text: [OpenIntro Statistics §8.2](https://www.openintro.org/book/os/). Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
 
 ### mean
 

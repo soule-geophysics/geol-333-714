@@ -25,6 +25,11 @@ A measurement point the survey returns to. Returning to it ties the relative rea
 
 The weight on the end of a pendulum's string. Ours is a one-inch metal ball.
 
+### correlation
+
+A number between −1 and +1 for how tightly two quantities follow a straight line together, and
+in which direction. Course text: [OpenIntro Statistics §8.1](https://www.openintro.org/book/os/). Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
+
 ### covariance matrix
 
 The table of uncertainties a least-squares fit returns. The square roots of its diagonal
@@ -67,9 +72,20 @@ The fitting recipe that picks the line with the smallest total of squared vertic
 
 The best single value a set of repeated measurements gives: the sum divided by the count. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
+### median
+
+The middle value once the data are sorted: half the measurements sit below it, half above.
+`describe()` prints it as the 50% row. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+
 ### milligal (mGal)
 
 The working unit of field gravity: `1 mGal = 10⁻⁵ m/s²` (ten to the minus five meters per second squared), about one part per million of g.
+
+### model
+
+A mathematical claim about how the world behaves, written so data can test it.
+`T = 2π√(l/g)` (T equals two pi root l over g) is HW0's model; an anomaly is always measured
+against one.
 
 ### Newton's law of universal gravitation
 
@@ -78,6 +94,11 @@ Every mass pulls every other, along the line between them, with force `F = GMm/r
 ### normal distribution
 
 The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule. Course text: [OpenIntro Statistics §4.1](https://www.openintro.org/book/os/). Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+
+### outlier
+
+A measurement that sits far from the rest of its stack. One is never deleted silently: the
+analysis states it, then shows the result with and without it. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/). Video: [Outliers in regression](https://www.openintro.org/go?id=video_stat_linear_regression_outliers).
 
 ### pendulum length (l)
 
@@ -102,6 +123,12 @@ The smooth curve the histogram of a stack of repeated measurements approaches as
 ### property contrast
 
 A difference in a physical property (density, how strongly the rock is magnetized, or how fast seismic waves travel through it) between a buried body and its surroundings. A body with no contrast in the property a method senses is invisible to that method.
+
+### quartile (percentile)
+
+The 25% and 75% rows of `describe()`: one quarter of the data sits below the first quartile,
+three quarters below the third. A percentile generalizes this: the value below which that
+percent of the data sits. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
 
 ### random error
 
@@ -159,6 +186,11 @@ The sun and moon pull on the gravimeter and on the Earth. The effect is a few te
 ### trial
 
 One complete measurement in a stack. In HW0, one 10-swing timing at one pendulum length.
+
+### variance
+
+The square of the standard deviation. The fit's covariance matrix is built from variances,
+which is why the square roots of its diagonal entries are standard errors. Course text: [OpenIntro Statistics §2.1](https://www.openintro.org/book/os/).
 
 ### z-score
 

@@ -46,7 +46,7 @@ The slow change in a gravimeter's reading while the meter sits still. Two things
 
 ### equivalence principle
 
-The mass gravity pulls on is the same as the mass that resists a push, so when gravity is the only force acting, everything falls with the same g. It is the reason the bob's mass drops out of the pendulum's period.
+The mass gravity pulls on is the same as the mass that resists a push, so when gravity is the only force acting, everything falls with the same g. It is the reason the bob's mass drops out of the pendulum's period. Course text: Burger §6.1.1, Eqs. 6.3-6.4, where `F = ma` (F equals m a) set against `F = GmM/R²` (F equals G m M over R squared) lets the m cancel.
 
 ### error bar (uncertainty)
 
@@ -156,7 +156,7 @@ A data point's vertical miss from the fitted line: the data value minus the fitt
 
 ### shell theorem
 
-A uniform sphere pulls on anything outside it as if all its mass sat at its center. It is why the R in `g = GM/R²` is the distance to the planet's center, and why a buried sphere is the simplest anomaly model.
+A round body whose density depends on how deep you are but not on which way you face pulls on anything outside it as if all its mass sat at its center. Layers are fine and the Earth is layered; a lump on one side is not. It is why the R in `g = GM/R²` (g equals G M over R squared) is the distance to the planet's center. Run the other way, the same result makes a buried sphere the simplest anomaly model: from outside, a sphere of radius R and density contrast Dr pulls exactly like a point mass `M = (4/3)piR³Dr` (M equals four thirds pi R cubed delta rho) sitting at its center. Newton proved it in the *Principia* (1687), Book I, Section XII, "Of the attractive forces of spherical bodies": nothing pulls a body placed inside a shell (Prop. LXX), and from outside, a shell pulls as though its mass sat at the center (Prop. LXXI). A layered planet is a stack of shells, which is why the layers do not matter. Further reading: [Newton's *Principia*, Book I, Section XII](https://en.wikisource.org/wiki/The_Mathematical_Principles_of_Natural_Philosophy_(1729)/Book_1/Section_12) in Motte's 1729 translation, public domain; Turcotte & Schubert, *Geodynamics* (2nd ed.), §5-6, Eq. 5.99 for the buried-sphere case.
 
 ### slope and intercept
 
@@ -177,7 +177,7 @@ The typical distance of one measurement from the mean of its stack. It reports t
 
 ### standard error (SE)
 
-`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: [OpenIntro Statistics §5.1](https://www.openintro.org/book/os/). Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
+`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: [OpenIntro Statistics §7.1](https://www.openintro.org/book/os/), where `SE = s/√n` is worked; §5.1 gives the same idea for a proportion. Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
 
 ### station
 

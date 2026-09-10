@@ -18,8 +18,7 @@ length, each trial timing **ten complete swings and dividing by ten**, amplitude
 **Length convention.** `length_m` is the true pendulum length, pivot to the **centre** of the bob.
 Strings are marked at `l − 1.27 cm`, so the mark sits at the top of the one-inch bob and the reader
 adds the bob's radius. The five mark targets are 40.3, 60.5, 79.8, 100.6 and 119.4 cm from the top
-of the bob, which makes the true lengths **0.4157, 0.6177, 0.8107, 1.0187 and 1.2067 m**. They are
-deliberately not round numbers.
+of the bob, which makes the true lengths **0.4157, 0.6177, 0.8107, 1.0187 and 1.2067 m**.
 
 125 rows: 5 stations × 5 lengths × 5 trials. All present.
 

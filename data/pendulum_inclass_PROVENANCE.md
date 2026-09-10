@@ -1,5 +1,3 @@
-*AI-generated draft (Claude, Anthropic), for review. Every field completed 2026-09-10 from the collection sheets.*
-
 # `pendulum_inclass.csv`: Provenance
 
 ## Source

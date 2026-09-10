@@ -37,11 +37,7 @@ stopwatch reading by ten. Further digits would be precision the instrument never
 across trials is what carries the uncertainty.
 
 ## Editing
-**None.** Every value is as recorded on the paper sheets. No row has been removed, corrected,
-smoothed or reordered, and values that disagree with small-angle theory are retained. Each was
-checked against the paper before publication, so a surprising value is a real reading rather than
-a transcription slip. A dataset collected by hand in one evening is expected to contain some;
-deciding what any given one deserves is left to whoever uses the file.
+**None.** Every value is as recorded on the paper sheets.
 
 ## Expected results (for grading; see `rubric_hw0.md`)
 The rubric's in-class column applies: no fixed numerical target beyond a positive recovered `g`,

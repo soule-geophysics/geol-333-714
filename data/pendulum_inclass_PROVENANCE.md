@@ -8,8 +8,7 @@ CSV is the readable copy.
 
 ## License
 Instructor- and class-created course data (GEOL 333/714, Fall 2026). No external license or
-attribution constraint; free to post and redistribute as course content. Contains no student names
-or identifiers: `station` is an apparatus label, never a person or a group of people.
+attribution constraint; free to post and redistribute as course content.
 
 ## Protocol
 Five stations, each running the full protocol at its own apparatus: five lengths, five trials per

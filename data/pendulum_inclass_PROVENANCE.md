@@ -36,11 +36,12 @@ Periods are given to three decimals, which is the exact result of dividing a hun
 stopwatch reading by ten. Further digits would be precision the instrument never had; the spread
 across trials is what carries the uncertainty.
 
-## Known data caveat
-**One value is physically implausible and is retained rather than removed:** station E, length
-0.6177 m, trial 1, whose period of 1.376 s sits about 13% from what small-angle theory predicts.
-It was confirmed against the paper before publication. A dataset with a mistimed trial in it is
-what a real dataset looks like, and deciding what to do about that value is part of the work.
+## Editing
+**None.** Every value is as recorded on the paper sheets. No row has been removed, corrected,
+smoothed or reordered, and values that disagree with small-angle theory are retained. Each was
+checked against the paper before publication, so a surprising value is a real reading rather than
+a transcription slip. A dataset collected by hand in one evening is expected to contain some;
+deciding what any given one deserves is left to whoever uses the file.
 
 ## Expected results (for grading; see `rubric_hw0.md`)
 The rubric's in-class column applies: no fixed numerical target beyond a positive recovered `g`,

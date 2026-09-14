@@ -19,7 +19,7 @@ CC-BY-NC-SA 4.0 (per SERC reuse model). Attribution to A. Parsekian, University 
 | `minutes_since_start` | min | elapsed time since the first reading (derived from `time`); numeric time axis for the HW1 drift-vs-time fit |
 | `elevation_m` | m | elevation above the ground-floor base reference |
 | `reading_mgal` | mGal | absolute gravimeter reading |
-| `relative_mgal` | mGal | reading − ground-floor reference |
+| `relative_mgal` | mGal | ground-floor reference − reading |
 | `uncertainty_mgal` | mGal | instrument uncertainty (1σ) |
 
 ## Structure notes

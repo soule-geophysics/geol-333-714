@@ -7,7 +7,7 @@ carries the same content.
 
 ### 68-95-99.7 rule
 
-For the normal distribution: about 68% of values land within one standard deviation of the mean, 95% within two, 99.7% within three. The quick test for whether a value's distance from the mean is ordinary scatter. Course text: OpenIntro Statistics §4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+For the normal distribution: about 68% of values land within one standard deviation of the mean, 95% within two, 99.7% within three. The quick test for whether a value's distance from the mean is ordinary scatter. Course text: OpenIntro Statistics Section 4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
 
 ### accuracy
 
@@ -28,7 +28,7 @@ The weight on the end of a pendulum's string. Ours is a one-inch metal ball.
 ### correlation
 
 A number between −1 and +1 for how tightly two quantities follow a straight line together, and
-in which direction. Course text: OpenIntro Statistics §8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
+in which direction. Course text: OpenIntro Statistics Section 8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
 
 ### covariance matrix
 
@@ -46,7 +46,7 @@ The slow change in a gravimeter's reading while the meter sits still. Two things
 
 ### equivalence principle
 
-The mass gravity pulls on is the same as the mass that resists a push, so when gravity is the only force acting, everything falls with the same g. It is the reason the bob's mass drops out of the pendulum's period. Course text: Burger §6.1.1, Eqs. 6.3-6.4, where `F = ma` (F equals m a) set against `F = GmM/R²` (F equals G m M over R squared) lets the m cancel.
+The mass gravity pulls on is the same as the mass that resists a push, so when gravity is the only force acting, everything falls with the same g. It is the reason the bob's mass drops out of the pendulum's period. Course text: Burger Section 6.1.1, Eqs. 6.3-6.4, where `F = ma` (F equals m a) set against `F = GmM/R²` (F equals G m M over R squared) lets the m cancel.
 
 ### error bar (uncertainty)
 
@@ -66,7 +66,7 @@ The field instrument for gravity: a mass on a very soft spring in a rigid case. 
 
 ### histogram
 
-A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: OpenIntro Statistics Section 2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### impedance contrast
 
@@ -74,7 +74,7 @@ The jump in a material property across a boundary that makes the boundary reflec
 
 ### least squares
 
-The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 works it on the board; the homework uses it wherever a slope carries physics. Course text: OpenIntro Statistics §8.2. Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
+The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 works it on the board; the homework uses it wherever a slope carries physics. Course text: OpenIntro Statistics Section 8.2. Video: [Fitting a Line with Least Squares Regression](https://www.youtube.com/watch?v=z8DmwG2G4Qc&list=PLkIselvEzpM63ikRfN41DNIhSgzboELOM).
 
 ### matrix
 
@@ -82,12 +82,12 @@ A rectangular grid of numbers. In this course a matrix carries a whole system of
 
 ### mean
 
-The best single value a set of repeated measurements gives: the sum divided by the count. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+The best single value a set of repeated measurements gives: the sum divided by the count. Course text: OpenIntro Statistics Section 2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### median
 
 The middle value once the data are sorted: half the measurements sit below it, half above.
-`describe()` prints it as the 50% row. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+`describe()` prints it as the 50% row. Course text: OpenIntro Statistics Section 2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### milligal (mGal)
 
@@ -105,12 +105,12 @@ Every mass pulls every other, along the line between them, with force `F = GMm/r
 
 ### normal distribution
 
-The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule. Course text: OpenIntro Statistics §4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+The bell-shaped curve that stacks of repeated measurements approach. Its width is the standard deviation, and it obeys the 68-95-99.7 rule. Course text: OpenIntro Statistics Section 4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
 
 ### outlier
 
 A measurement that sits far from the rest of its stack. One is never deleted silently: the
-analysis states it, then shows the result with and without it. Course text: OpenIntro Statistics §2.1. Video: [Outliers in regression](https://www.openintro.org/go?id=video_stat_linear_regression_outliers).
+analysis states it, then shows the result with and without it. Course text: OpenIntro Statistics Section 2.1. Video: [Outliers in regression](https://www.openintro.org/go?id=video_stat_linear_regression_outliers).
 
 ### pendulum length (l)
 
@@ -130,7 +130,7 @@ How tightly repeated measurements agree with each other. Limited by random error
 
 ### probability density function (PDF)
 
-The smooth curve the histogram of a stack of repeated measurements approaches as the stack grows, once the histogram is scaled so its total area is one. The normal distribution is the one our measurements follow. Course text: OpenIntro Statistics §3.5.
+The smooth curve the histogram of a stack of repeated measurements approaches as the stack grows, once the histogram is scaled so its total area is one. The normal distribution is the one our measurements follow. Course text: OpenIntro Statistics Section 3.5.
 
 ### property contrast
 
@@ -140,7 +140,7 @@ A difference in a physical property (density, how strongly the rock is magnetize
 
 The 25% and 75% rows of `describe()`: one quarter of the data sits below the first quartile,
 three quarters below the third. A percentile generalizes this: the value below which that
-percent of the data sits. Course text: OpenIntro Statistics §2.1.
+percent of the data sits. Course text: OpenIntro Statistics Section 2.1.
 
 ### random error
 
@@ -152,15 +152,15 @@ A spring gravimeter reads differences between stations; an absolute gravimeter d
 
 ### residual
 
-A data point's vertical miss from the fitted line: the data value minus the fitted value, so it carries a sign. Least squares is the recipe that makes the summed squared residuals as small as possible. Course text: OpenIntro Statistics §8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
+A data point's vertical miss from the fitted line: the data value minus the fitted value, so it carries a sign. Least squares is the recipe that makes the summed squared residuals as small as possible. Course text: OpenIntro Statistics Section 8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
 
 ### shell theorem
 
-A round body whose density depends on how deep you are but not on which way you face pulls on anything outside it as if all its mass sat at its center. Layers are fine and the Earth is layered; a lump on one side is not. It is why the R in `g = GM/R²` (g equals G M over R squared) is the distance to the planet's center. Run the other way, the same result makes a buried sphere the simplest anomaly model: from outside, a sphere of radius R and density contrast Dr pulls exactly like a point mass `M = (4/3)piR³Dr` (M equals four thirds pi R cubed delta rho) sitting at its center. Newton proved it in the *Principia* (1687), Book I, Section XII, "Of the attractive forces of spherical bodies": nothing pulls a body placed inside a shell (Prop. LXX), and from outside, a shell pulls as though its mass sat at the center (Prop. LXXI). A layered planet is a stack of shells, which is why the layers do not matter. Further reading: [Newton's *Principia*, Book I, Section XII](https://en.wikisource.org/wiki/The_Mathematical_Principles_of_Natural_Philosophy_(1729)/Book_1/Section_12) in Motte's 1729 translation, public domain; Turcotte & Schubert, *Geodynamics* (2nd ed.), §5-6, Eq. 5.99 for the buried-sphere case.
+A round body whose density depends on how deep you are but not on which way you face pulls on anything outside it as if all its mass sat at its center. Layers are fine and the Earth is layered; a lump on one side is not. It is why the R in `g = GM/R²` (g equals G M over R squared) is the distance to the planet's center. Run the other way, the same result makes a buried sphere the simplest anomaly model: from outside, a sphere of radius R and density contrast Dr pulls exactly like a point mass `M = (4/3)piR³Dr` (M equals four thirds pi R cubed delta rho) sitting at its center. Newton proved it in the *Principia* (1687), Book I, Section XII, "Of the attractive forces of spherical bodies": nothing pulls a body placed inside a shell (Prop. LXX), and from outside, a shell pulls as though its mass sat at the center (Prop. LXXI). A layered planet is a stack of shells, which is why the layers do not matter. Further reading: [Newton's *Principia*, Book I, Section XII](https://en.wikisource.org/wiki/The_Mathematical_Principles_of_Natural_Philosophy_(1729)/Book_1/Section_12) in Motte's 1729 translation, public domain; Turcotte & Schubert, *Geodynamics* (2nd ed.), Sections 5-6, Eq. 5.99 for the buried-sphere case.
 
 ### slope and intercept
 
-The two numbers a line fit returns. In this course the slope carries the physics (g from the pendulum, a drift rate, the free-air gradient), and the intercept picks up apparatus effects: a constant error in the length moves the line up or down without changing its slope. Course text: OpenIntro Statistics §8.2.
+The two numbers a line fit returns. In this course the slope carries the physics (g from the pendulum, a drift rate, the free-air gradient), and the intercept picks up apparatus effects: a constant error in the length moves the line up or down without changing its slope. Course text: OpenIntro Statistics Section 8.2.
 
 ### small-angle approximation
 
@@ -173,11 +173,15 @@ noise by the same square-root-of-N mathematics; Module 3 meets it again.
 
 ### standard deviation (s)
 
-The typical distance of one measurement from the mean of its stack. It reports the scatter of a single trial. Course text: OpenIntro Statistics §2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
+The typical distance of one measurement from the mean of its stack. It reports the scatter of a single trial. Course text: OpenIntro Statistics Section 2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### standard error (SE)
 
-`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: OpenIntro Statistics §7.1, where `SE = s/√n` is worked; §5.1 gives the same idea for a proportion. Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
+`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: OpenIntro Statistics Section 7.1, where `SE = s/√n` is worked; Section 5.1 gives the same idea for a proportion. Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
+
+### sigma
+
+Sigma is the symbol papers and instruments use for the quantity you met as the **standard deviation** and the **standard error**. Which one it means depends on what it is attached to. A sigma on a set of readings is their spread. A sigma on a number that came out of a fit, such as a slope, is how far that number would move if you ran the survey again, which is a standard error. Quoting a value as `−0.287 ± 0.008` is quoting a 1-sigma uncertainty: one sigma either side. What that buys you is the **68-95-99.7 rule**: a fitted value lands within 1 sigma of the truth about 68 per cent of the time and within 2 sigma about 95 per cent. So a gap of more than about 2 sigma is one the scatter is unlikely to have produced by chance.
 
 ### station
 
@@ -202,11 +206,11 @@ One complete measurement in a stack. In HW0, one 10-swing timing at one pendulum
 ### variance
 
 The square of the standard deviation. The fit's covariance matrix is built from variances,
-which is why the square roots of its diagonal entries are standard errors. Course text: OpenIntro Statistics §2.1.
+which is why the square roots of its diagonal entries are standard errors. Course text: OpenIntro Statistics Section 2.1.
 
 ### z-score
 
-A measurement rewritten as its distance from the mean of its own stack, in units of standard deviation: `z = (value − mean) / s` (z equals value minus mean, over s). It puts every stack on one axis so the 68-95-99.7 rule can be checked across all of them. Course text: OpenIntro Statistics §4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
+A measurement rewritten as its distance from the mean of its own stack, in units of standard deviation: `z = (value − mean) / s` (z equals value minus mean, over s). It puts every stack on one axis so the 68-95-99.7 rule can be checked across all of them. Course text: OpenIntro Statistics Section 4.1. Video: [Normal distribution](https://www.openintro.org/go?id=video_stat_normal_distribution).
 
 ## Python and Colab terms
 
@@ -234,6 +238,11 @@ with that variable's value.
 
 A statement that repeats a computation once for each value in a list.
 
+### GitHub
+
+The website where the course's [repository](#repository) is kept. You do not need an account
+to read it, and the course never asks you to make one.
+
 ### library
 
 A collection of ready-made Python tools, loaded with `import`. NumPy, Pandas, and Plotly are
@@ -248,6 +257,14 @@ tutorial covers them in depth: [docs.python.org, Data Structures](https://docs.p
 
 A Colab notebook is a page of cells. Text cells hold instructions and questions; code cells
 hold Python you run.
+
+### repository
+
+A folder of files kept online together with its history. The course's is
+<a href="https://github.com/soule-geophysics/geol-333-714">`soule-geophysics/geol-333-714`</a>,
+and it holds every notebook and dataset you use. It is public, which is why the links that
+fetch from it work without a login: `colab.research.google.com/github/...` opens a notebook
+from it, and `raw.githubusercontent.com/...` is a data file inside it.
 
 ### variable
 

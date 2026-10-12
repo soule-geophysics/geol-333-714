@@ -14,7 +14,7 @@ attribution constraint; free to post and redistribute as course content.
 Five stations, each running the full protocol at its own apparatus: five lengths, five trials per
 length, each trial timing **ten complete swings and dividing by ten**, amplitude under 15°.
 
-**Length convention.** `length_m` is the true pendulum length, pivot to the **centre** of the bob.
+**Length convention.** `length_m` is the true pendulum length, pivot to the **center** of the bob.
 Strings are marked at `l − 1.27 cm`, so the mark sits at the top of the one-inch bob and the reader
 adds the bob's radius. The five mark targets are 40.3, 60.5, 79.8, 100.6 and 119.4 cm from the top
 of the bob, which makes the true lengths **0.4157, 0.6177, 0.8107, 1.0187 and 1.2067 m**.
@@ -26,7 +26,7 @@ of the bob, which makes the true lengths **0.4157, 0.6177, 0.8107, 1.0187 and 1.
 |---|---|---|
 | `station` | label | apparatus identifier, `A` to `E` (text; identifies a ringstand, never a person) |
 | `trial` | integer | trial index, 1 to 5, within each station and length |
-| `length_m` | m | true pendulum length, pivot to centre of bob (one of the five set lengths) |
+| `length_m` | m | true pendulum length, pivot to center of bob (one of the five set lengths) |
 | `t10_s` | s | raw stopwatch time for ten complete swings |
 | `period_s` | s | derived single-swing period, `t10_s / 10` |
 

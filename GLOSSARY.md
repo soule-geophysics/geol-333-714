@@ -21,6 +21,8 @@ The difference between what we observe and what we can explain. The whole aim of
 
 A measurement point the survey returns to. Returning to it ties the relative readings to a known value and records how far the instrument drifted while you worked. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#field-procedures" target="_blank" rel="noopener">Field procedures</a> (CC BY 4.0).
 
+In magnetics, the base station is a magnetometer left at one spot, logging the field all day while the rover reads the line. The change in its record since the first base reading is the diurnal variation. That change is subtracted from each rover reading taken at the same time. A modern magnetometer does not drift the way a gravimeter does, so the magnetic base station tracks the field's change through the day. Course text: Burger Sections 7.4.2 and 7.4.4. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_survey.html#base-station" target="_blank" rel="noopener">Base Station</a> (CC BY 4.0).
+
 ### bob
 
 The weight on the end of a pendulum's string. Ours is a one-inch metal ball.
@@ -48,6 +50,10 @@ slope's error bar in this course comes from.
 
 The surface every corrected reading is referred back to. The corrections do not produce absolute gravity; they produce gravity as it would have been read at the datum. In our surveys the datum is the base station's elevation, so a corrected station value answers one question: how much does this place differ from the base, once the instrument and the elevation have been accounted for.
 
+### declination
+
+The angle between magnetic north and geographic north, measured in the horizontal plane. A compass needle points along the horizontal part of the Earth's field, so it is off true north by the declination. Burger writes it d: the northward part of the horizontal field is `X_E = H_E cos d` (X sub E equals H sub E times cosine d) and the eastward part is `Y_E = H_E sin d` (Y sub E equals H sub E times sine d). Course text: Burger Section 7.2.1, Eq. 7.9. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#earth-s-magnetic-field-source" target="_blank" rel="noopener">Earth's magnetic field (Source)</a> (CC BY 4.0). It writes the declination as D.
+
 ### determinant
 
 A single number computed from a square matrix; for a 2x2 it is `ad - bc` (a d minus b c). It tells you whether a system of equations has one answer: when the determinant is zero the two lines are parallel or identical, so there is no unique solution, and the solver calls the system singular.
@@ -55,6 +61,14 @@ A single number computed from a square matrix; for a 2x2 it is `ad - bc` (a d mi
 ### dial constant
 
 The number that converts a gravimeter's dial reading into milligals. The instrument does not read gravity directly. It reads a position on a dial, and the dial constant is the calibration that turns dial divisions into mGal. It belongs to the individual meter and comes from its calibration, so using the wrong one scales every reading in a survey by the same wrong factor, which is a systematic error rather than a random one. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#field-procedures" target="_blank" rel="noopener">Field procedures</a> (CC BY 4.0).
+
+### dipole
+
+Two nearby poles of equal strength and opposite sign. A magnetized body whose size is small compared with its distance from the sensor behaves as a dipole. So does the Earth's main field, to a first approximation. On the dipole's axis the field is `H_r = 2M/r³` (H sub r equals two M over r cubed; Burger Eq. 7.12), where M is the dipole's moment and r the distance from its center. Here H is Burger's symbol for field strength. It is a different quantity from the horizontal component, H. Doubling the distance cuts the field to one eighth. A gravity anomaly falls off as 1/r², so a magnetic anomaly from a compact body is narrower and dies away faster with depth. Course text: Burger Section 7.2.4. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#fields-due-to-a-magnetic-dipole" target="_blank" rel="noopener">Fields due to a magnetic dipole</a> (CC BY 4.0).
+
+### diurnal variation and the diurnal correction
+
+The diurnal variation is the change in the measured field through the day at one spot, several to a few tens of nT. Its source is outside the Earth: currents in the upper atmosphere driven by the Sun. It is corrected the way gravimeter drift is: a base station logs the field all day, and each rover reading has the base station's change since the start subtracted from it, `corrected = rover − (base − first base reading)` (corrected equals the rover reading minus the quantity base reading minus first base reading). This works because the outside source changes the field by the same amount at the base station and on the survey line at the same moment. When the field rises during a survey, the correction lowers the rover readings. During a magnetic storm the variation is too large to correct, and the survey stops. It subtracts the whole base reading at each time, so its corrected values are differences from the base station. Course text: Burger Section 7.4.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#removal-of-time-variations" target="_blank" rel="noopener">Removal of time variations</a> (CC BY 4.0).
 
 ### drift
 
@@ -112,13 +126,29 @@ A bar chart of a set of repeated measurements: each bar counts how many values l
 
 The rule that a spring's restoring force is proportional to how far it has been stretched, `F = −kx` (F equals minus k x), where k is the spring constant and the minus sign says the force opposes the stretch. It holds for small deformations, which is the elastic regime. A gravimeter is built on it: a mass hangs on a spring, a change in gravity changes the force on that mass, and the spring's length changes in proportion, so measuring a length becomes measuring gravity. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#measuring-gravity" target="_blank" rel="noopener">Measuring gravity</a> (CC BY 4.0).
 
+### horizontal component, H
+
+The horizontal part of the Earth's field, pointing toward magnetic north: `H = F cos i` (H equals F times cosine i), where F is the total field and i the inclination. It is largest at the magnetic equator and zero at the magnetic poles. The horizontal part of a buried body's own field, measured toward magnetic north, is written H_A. Course text: Burger Section 7.2.1, Eq. 7.9. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#earth-s-magnetic-field-source" target="_blank" rel="noopener">Earth's magnetic field (Source)</a> (CC BY 4.0).
+
 ### horizontal cylinder (simple-shape model)
 
 The model for a buried body much longer than it is wide, such as a tunnel, a buried channel or a pipe, with the profile crossing it at right angles. R is the cylinder's radius, z the depth to its axis, and Δρ (delta rho) the density contrast. Its anomaly is `Δg(x) = 2πGΔρR²z / (x² + z²)` (delta g of x equals two pi G delta rho R squared z, over x squared plus z squared), largest directly above the axis, where it equals `2πGΔρR² / z` (two pi G delta rho R squared over z). With distance from the axis it falls off more slowly than a sphere's anomaly. Depth rule: `z = x½` (z equals the half-width). Course text: Burger Section 6.5.3. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#what-is-actually-measured" target="_blank" rel="noopener">What is actually measured?</a> (CC BY 4.0). It writes the density contrast the other way round, host rock minus body.
 
+### IGRF
+
+The International Geomagnetic Reference Field: the global model of the Earth's main field, updated every five years. It gives the field's strength and direction at any place and date. Subtracting the IGRF value for the survey area from the corrected readings removes the Earth's main field, `anomaly = corrected − IGRF` (anomaly equals the corrected reading minus the IGRF value). The result still contains any broad regional trend. That trend is separated as in gravity. Course text: Burger Section 7.4.4. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#the-igrf" target="_blank" rel="noopener">The IGRF</a> (CC BY 4.0).
+
 ### impedance contrast
 
 The jump in a material property across a boundary that makes the boundary reflect. No jump, no echo, and the boundary is invisible even though it is right there. Each method has its own impedance: seismic impedance is density times wave speed; radar impedance is set by the electrical properties, and water dominates those. Both are mostly set by how much pore space is down there and what is sitting in it, which is why the two often light up the same boundary. Module 3 works the seismic case. Course resource: [Seismic Reflection](https://www.iris.edu/hq/inclass/lesson/seismic_reflection) (EarthScope/IRIS, CC BY 4.0).
+
+### inclination
+
+The angle the Earth's field plunges below the horizontal, written i. In the southern hemisphere the field points upward, and i is negative, down to −90° at the south magnetic pole. It is 0° at the magnetic equator, 90° at the north magnetic pole, and about 65° at Queens. It fixes how the field splits into its parts, `tan i = Z/H` (tangent i equals Z over H), and it sets the shape of a magnetic anomaly: at most inclinations the anomaly over a buried body is lopsided, and at the pole it is symmetric. Course text: Burger Section 7.2.1, Eq. 7.9. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#earth-s-magnetic-field-source" target="_blank" rel="noopener">Earth's magnetic field (Source)</a> (CC BY 4.0). It writes the inclination as I. Burger and this course write i, because Burger's I is the magnetization.
+
+### induced magnetization
+
+Magnetization a rock acquires from the field it sits in today. It points along the Earth's field, and its strength is the susceptibility times the field, `I = kF_E` (I equals k times F sub E). Burger writes Eq. 7.7 as `I = kH` (I equals k times H), with H the whole field acting on the rock. Remove the field and induced magnetization goes away. The anomaly formulas in this course assume all magnetization is induced. Course text: Burger Section 7.1.5, Eq. 7.7. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#magnetization" target="_blank" rel="noopener">Magnetization</a> (CC BY 4.0). It writes the magnetization as M and the susceptibility as κ (kappa). In Burger, M is the dipole moment. Burger's symbol for the magnetization is I.
 
 ### inverse problem
 
@@ -154,6 +184,10 @@ The working unit of field gravity: `1 mGal = 10⁻⁵ m/s²` (ten to the minus f
 A mathematical claim about how the world behaves, written so data can test it. The word also names a proposed body underground, such as a buried sphere, whose computed anomaly is compared with the survey; the simple-shape entries are models in this sense.
 `T = 2π√(l/g)` (T equals two pi root l over g) is HW0's model; an anomaly is always measured
 against one. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/foundations/foundations_model_types.html" target="_blank" rel="noopener">Mathematical representations of the Earth</a> (CC BY 4.0).
+
+### nanotesla (nT)
+
+The working unit of field magnetics: `1 nT = 10⁻⁹ T` (one nanotesla equals ten to the minus nine tesla). The Earth's field is about 51,000 nT at Queens. Anomalies from buried bodies range from under 1 nT to thousands of nT. Burger's Chapter 7 examples run from about 3 nT to over 1,000 nT. A proton-precession magnetometer reads to about 1 nT. The gamma of older texts is the same size as the nanotesla. Course text: Burger Section 7.1.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#the-igrf" target="_blank" rel="noopener">The IGRF</a> (CC BY 4.0).
 
 ### Nettleton's method (density sweep)
 
@@ -200,6 +234,10 @@ The smooth curve the histogram of a stack of repeated measurements approaches as
 
 A difference in a physical property (density, how strongly the rock is magnetized, or how fast seismic waves travel through it) between a buried body and its surroundings. In gravity the property is density, and the difference is the density contrast, Δρ (delta rho), which Burger writes ρ_c. A body with no contrast in the property a method senses is invisible to that method. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#the-physical-property-density" target="_blank" rel="noopener">The physical property: density</a> (CC BY 4.0).
 
+### proton-precession magnetometer (PPM)
+
+A magnetometer that reads the strength of the total field, F, and nothing about its direction. It is routinely precise to about ±1 nT and does not need to be leveled or pointed. A steep field gradient, near a steel object for instance, spoils the reading. Course text: Burger Section 7.3.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_survey.html#proton-precession-magnetometer" target="_blank" rel="noopener">Proton Precession Magnetometer</a> (CC BY 4.0).
+
 ### quartile (percentile)
 
 The 25% and 75% rows of `describe()`: one quarter of the data sits below the first quartile,
@@ -214,6 +252,10 @@ Scatter that changes size and sign from trial to trial, like the small timing er
 
 The density assumed for the rock between a station and the datum when the Bouguer correction is computed. Texts quote 2.67 g/cm³ for average continental crust, but the material under a particular survey may be nothing like that, and the anomaly that comes out depends on the number chosen.
 
+### reduction to the pole
+
+A processing step. From the anomaly measured at the survey's inclination, it computes the anomaly that would have been measured if the Earth's field were vertical, as at the magnetic pole. At the pole the H_A term of the total-field anomaly drops out, so the anomaly over a compact body is symmetric, with its peak over the body. The calculation assumes the magnetization is all induced. A body with strong remanent magnetization is not moved to the right place. Magnetic maps are often shown reduced to the pole so that each high sits over its source. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#reduction-to-pole" target="_blank" rel="noopener">Reduction to Pole</a> (CC BY 4.0).
+
 ### regional
 
 The broad, slowly varying part of a gravity profile or map, produced by structure deeper or wider than the target: a thickening sediment cover, a dipping contact, relief on the basement, or the change in normal gravity with latitude. It is removed to leave the residual anomaly. Whether a feature counts as regional depends on what the survey is looking for; the same curve can be the regional in one survey and the target in another. In HW2a the regional is a straight line fitted by least squares; Burger calls a fitted polynomial of this kind a trend surface. Course text: Burger Sections 6.6.1 and 6.6.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#data-presentation-options" target="_blank" rel="noopener">Data presentation options</a> and <a href="https://gpg.geosci.xyz/content/gravity/gravity_example.html" target="_blank" rel="noopener">Gravity example</a> (CC BY 4.0).
@@ -222,6 +264,10 @@ The broad, slowly varying part of a gravity profile or map, produced by structur
 
 A spring gravimeter reads differences between stations; an absolute gravimeter drops a mirror in a vacuum chamber and times its fall with a laser to read g itself. Surveys read differences and tie them to a base station whose absolute value is known. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#field-procedures" target="_blank" rel="noopener">Field procedures</a> (CC BY 4.0).
 
+### remanent magnetization
+
+Magnetization a rock keeps with no field applied. An igneous rock acquires it as it cools through the Curie temperature, the temperature below which its magnetic minerals can hold a magnetization. It records the field of that time, so it can point in a direction unrelated to today's field. Burger sets it aside for anomaly work and assumes all magnetization is induced. Where a body carries strong remanence, an anomaly computed from induced magnetization alone can place the body in the wrong spot. Course text: Burger Section 7.1.5. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#remanent-magnetization" target="_blank" rel="noopener">Remanent Magnetization</a> (CC BY 4.0).
+
 ### residual
 
 A data point's vertical miss from the fitted line: the data value minus the fitted value, so it carries a sign. Least squares is the recipe that makes the summed squared residuals as small as possible. Course text: OpenIntro Statistics Section 8.1. Video: [Line fitting, residuals, and correlation](https://www.openintro.org/go?id=video_stat_linear_regression_line_fitting_residuals_correlation).
@@ -229,6 +275,10 @@ A data point's vertical miss from the fitted line: the data value minus the fitt
 ### residual anomaly
 
 What remains of the Bouguer anomaly once the regional is removed: the Bouguer anomaly minus the regional, station by station. It is the local signal an interpretation works from, and the input to the half-width and the depth rules. Its shape depends on the regional chosen and on the reduction density, so both are reported with it. The statistics sense of residual, a data point's miss from a fitted line, applies here too: the residual anomaly is the miss from the fitted regional. Course text: Burger Section 6.6.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#data-presentation-options" target="_blank" rel="noopener">Data presentation options</a> (CC BY 4.0).
+
+### rover
+
+The magnetometer carried along the survey line, reading at each station. A second magnetometer stays at the base station. Each rover reading carries the time it was taken, so the base station's record at that time can correct it for the diurnal variation. Course text: Burger Section 7.4.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#removal-of-time-variations" target="_blank" rel="noopener">Removal of time variations</a> (CC BY 4.0). It calls it the roving sensor.
 
 ### shell theorem
 
@@ -271,6 +321,10 @@ A place where a reading is taken. A survey is a planned set of stations. Further
 
 Read the base station, read the survey stations, then read the base station again. The gap between the two base readings is the drift, and each station gets a correction sized by when it was read. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#field-procedures" target="_blank" rel="noopener">Field procedures</a> (CC BY 4.0).
 
+### susceptibility, k
+
+How strongly a rock magnetizes in a field. In the Earth's field a rock acquires magnetization `I = kF_E` (I equals k times F sub E). For the small k of rocks, twice the k gives twice the magnetization and twice the anomaly. Burger quotes k in emu (electromagnetic units, the cgs system Burger uses): about 0.00005 for sedimentary rocks, about 0.0005 for granites, about 0.012 for ultrabasic rocks, and 1 to 10 for many iron and steel objects. Susceptibility is the physical property contrast a magnetic survey senses. Course text: Burger Sections 7.1.5 (Eq. 7.7) and 7.5.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_physical_property.html" target="_blank" rel="noopener">Susceptibility</a> (CC BY 4.0). It writes the susceptibility as κ (kappa) and uses SI units. To convert, multiply an emu value by 4π to get the SI value.
+
 ### systematic error
 
 An error that pushes every reading in the same direction, so averaging never removes it. Calling a mark at the top of the bob the pendulum length is one: it makes a single-length `g` come out low, and in the multi-length fit it moves the intercept while leaving the slope. Found by checking assumptions against the apparatus; taking more readings does not reveal it.
@@ -283,6 +337,14 @@ The correction for the ground not being flat. The Bouguer correction models ever
 
 The sun and moon pull on the gravimeter and on the Earth. The effect is a few tenths of a milligal over a day. It can be predicted in advance, so a survey that needs to can separate it from the instrument's own drift; a short survey's base loop corrects the two together. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#corrections" target="_blank" rel="noopener">Corrections</a> (CC BY 4.0).
 
+### total field, F
+
+The strength of the magnetic field at the sensor, in nT. Away from any buried body it is the Earth's field, written F_E, about 51,000 nT at Queens. It is the long side of the triangle whose legs are H and Z: `F = √(H² + Z²)` (F equals the square root of H squared plus Z squared). A total-field magnetometer reads F and nothing about its direction. Course text: Burger Section 7.2.1, Eq. 7.9. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#earth-s-magnetic-field-source" target="_blank" rel="noopener">Earth's magnetic field (Source)</a> (CC BY 4.0). It writes the field strength as |B|.
+
+### total-field anomaly, F_AT
+
+The part of a buried body's field that lies along the Earth's field. It is what a total-field survey measures once the diurnal variation and the IGRF are removed: `F_AT = Z_A sin i + H_A cos i` (F sub A T equals Z sub A times sine i, plus H sub A times cosine i), where Z_A is the vertical part of the body's field and H_A is its horizontal part toward magnetic north. In the northern hemisphere, between the magnetic equator and the north magnetic pole, sin i and cos i are both positive, so each term takes the sign of Z_A or H_A. There, south of the body the two terms add. North of the center they oppose, and farther north both are negative, giving the low. That is why the anomaly is lopsided. In the southern hemisphere the pattern is reversed. Course text: Burger Section 7.3.3, Eq. 7.18. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_data.html#magnetic-field-data" target="_blank" rel="noopener">Magnetic field data</a> (CC BY 4.0). It writes the total-field anomaly as B_T.
+
 ### trial
 
 One complete measurement in a stack. In HW0, one 10-swing timing at one pendulum length.
@@ -291,6 +353,14 @@ One complete measurement in a stack. In HW0, one 10-swing timing at one pendulum
 
 The square of the standard deviation. The fit's covariance matrix is built from variances,
 which is why the square roots of its diagonal entries are standard errors. Course text: OpenIntro Statistics Section 2.1.
+
+### vertical component, Z
+
+The vertical part of the Earth's field, positive downward: `Z = F sin i` (Z equals F times sine i). It is zero at the magnetic equator. At the north magnetic pole it equals F, about 70,000 nT. At the south magnetic pole the field points up, so Z equals −F. The vertical part of a buried body's own field is written Z_A. Course text: Burger Section 7.2.1, Eq. 7.9. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#earth-s-magnetic-field-source" target="_blank" rel="noopener">Earth's magnetic field (Source)</a> (CC BY 4.0). It takes z positive up in its applets.
+
+### volume, V, and the product k times V
+
+In the sphere's anomaly (Burger Eqs. 7.36 and 7.37), the radius and the susceptibility enter only through the front factor `(4/3)πR³ kF_E` (four thirds pi R cubed, times k, times F sub E). The `(4/3)πR³` part is the sphere's volume, V. At one depth and one site, two spheres with the same k times V give the same anomaly at every station. The width of the anomaly gives the depth. The amplitude gives only k times V: a small, strongly magnetic body and a large, weakly magnetic one cannot be told apart from the profile alone. A drill hole, a measured susceptibility or the geology decides between them. Gravity has the same limit with the excess mass. Course text: Burger Section 7.5.4. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#magnetization" target="_blank" rel="noopener">Magnetization</a> (CC BY 4.0).
 
 ### z-score
 

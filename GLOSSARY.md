@@ -68,7 +68,7 @@ Two nearby poles of equal strength and opposite sign. A magnetized body whose si
 
 ### diurnal variation and the diurnal correction
 
-The diurnal variation is the change in the measured field through the day at one spot, several to a few tens of nT. Its source is outside the Earth: currents in the upper atmosphere driven by the Sun. It is corrected the way gravimeter drift is: a base station logs the field all day, and each rover reading has the base station's change since the start subtracted from it, `corrected = rover − (base − first base reading)` (corrected equals the rover reading minus the quantity base reading minus first base reading). This works because the outside source changes the field by the same amount at the base station and on the survey line at the same moment. When the field rises during a survey, the correction lowers the rover readings. During a magnetic storm the variation is too large to correct, and the survey stops. It subtracts the whole base reading at each time, so its corrected values are differences from the base station. Course text: Burger Section 7.4.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#removal-of-time-variations" target="_blank" rel="noopener">Removal of time variations</a> (CC BY 4.0).
+The diurnal variation is the change in the measured field through the day at one spot, several to a few tens of nT. Its source is outside the Earth: currents in the upper atmosphere driven by the Sun. It is corrected the way gravimeter drift is: a base station logs the field all day, and each rover reading has the base station's change since the start subtracted from it, `corrected = rover − (base − first base reading)` (corrected equals the rover reading minus the quantity base reading minus first base reading). This works because the outside source changes the field by the same amount at the base station and on the survey line at the same moment. When the field rises during a survey, the correction lowers the rover readings. During a magnetic storm the variation is too large to correct, and the survey stops. Course text: Burger Section 7.4.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#removal-of-time-variations" target="_blank" rel="noopener">Removal of time variations</a> (CC BY 4.0). British Geological Survey, <a href="https://geomag.bgs.ac.uk/education/earthmag.html" target="_blank" rel="noopener">The Earth's Magnetic Field: An Overview</a>, section 3.6.
 
 ### drift
 
@@ -116,7 +116,7 @@ A depth estimate read from an anomaly's width. The deeper a body, the broader an
 
 ### half-width (x½)
 
-The horizontal distance from the peak (or trough, for a low) of an anomaly to the point where it has fallen to half its peak amplitude. The amplitude is measured from the background level, so the half level is the background plus half the amplitude. When the two sides of a profile differ, the half-width is the average of the two distances. Burger writes it x½max (x sub one-half max). It is the input to the half-maximum technique. Course text: Burger Section 6.7.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#what-is-actually-measured" target="_blank" rel="noopener">What is actually measured?</a> (CC BY 4.0).
+The horizontal distance from the peak (or trough, for a low) of an anomaly to the point where it has fallen to half its peak amplitude. The amplitude is measured from the background level, so the half level is the background plus half the amplitude. When the two sides of a profile differ, this course takes the half-width as the average of the two distances. That equals half the full width at half maximum. Burger writes it x½max (x sub one-half max). It is the input to the half-maximum technique. Course text: Burger Section 6.7.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#what-is-actually-measured" target="_blank" rel="noopener">What is actually measured?</a> (CC BY 4.0).
 
 ### histogram
 
@@ -208,7 +208,7 @@ The bell-shaped curve that stacks of repeated measurements approach. Its width i
 ### outlier
 
 A measurement that sits far from the rest of its stack. One is never deleted silently: the
-analysis states it, then shows the result with and without it. Course text: OpenIntro Statistics Section 2.1. Video: [Outliers in regression](https://www.openintro.org/go?id=video_stat_linear_regression_outliers).
+analysis states it, then shows the result with and without it. Course text: OpenIntro Statistics Section 2.1.5. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
 ### pendulum length (l)
 
@@ -246,7 +246,7 @@ percent of the data sits. Course text: OpenIntro Statistics Section 2.1.
 
 ### random error
 
-Scatter that changes size and sign from trial to trial, like the small timing errors from pressing a stopwatch. Averaging N trials shrinks it by the square root of N.
+Scatter that changes size and sign from trial to trial, like the small timing errors from pressing a stopwatch. Averaging N trials shrinks the uncertainty of the average by the square root of N.
 
 ### reduction density
 
@@ -311,7 +311,7 @@ The typical distance of one measurement from the mean of its stack. It reports t
 
 ### standard error (SE)
 
-`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: OpenIntro Statistics Section 7.1, where `SE = s/√n` is worked; Section 5.1 gives the same idea for a proportion. Video: [Variability in estimates](https://www.openintro.org/go?id=video_stat_variability_in_estimates_prop).
+`SE = s/√N` (s over root N): the uncertainty of the **mean** of N trials. Taking more trials does not shrink the scatter of a single trial. It does make the mean more certain. Course text: OpenIntro Statistics Section 7.1, where `SE = s/√n` is worked; Section 5.1 gives the same idea for a proportion. Video: [Inference for one mean](https://www.openintro.org/go?id=video_stat_inference_for_a_mean).
 
 ### station
 
@@ -323,7 +323,7 @@ Read the base station, read the survey stations, then read the base station agai
 
 ### susceptibility, k
 
-How strongly a rock magnetizes in a field. In the Earth's field a rock acquires magnetization `I = kF_E` (I equals k times F sub E). For the small k of rocks, twice the k gives twice the magnetization and twice the anomaly. Burger quotes k in emu (electromagnetic units, the cgs system Burger uses): about 0.00005 for sedimentary rocks, about 0.0005 for granites, about 0.012 for ultrabasic rocks, and 1 to 10 for many iron and steel objects. Susceptibility is the physical property contrast a magnetic survey senses. Course text: Burger Sections 7.1.5 (Eq. 7.7) and 7.5.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_physical_property.html" target="_blank" rel="noopener">Susceptibility</a> (CC BY 4.0). It writes the susceptibility as κ (kappa) and uses SI units. To convert, multiply an emu value by 4π to get the SI value.
+How strongly a rock magnetizes in a field. In the Earth's field a rock acquires magnetization `I = kF_E` (I equals k times F sub E). For the small k of rocks, twice the k gives twice the magnetization and twice the anomaly. Burger quotes k in emu (electromagnetic units, the cgs system Burger uses): about 0.00005 for sedimentary rocks, about 0.0005 for granites, about 0.012 for ultrabasic rocks, and 1 to 10 for many iron and steel objects. Susceptibility is the physical property contrast a magnetic survey senses. Course text: Burger Sections 7.1.5 (Eq. 7.7) and 7.5.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_physical_property.html" target="_blank" rel="noopener">Susceptibility</a> and <a href="https://gpg.geosci.xyz/content/physical_properties/magnetics_susceptibility_duplicate.html" target="_blank" rel="noopener">Magnetic susceptibility</a> (CC BY 4.0). It writes the susceptibility as κ (kappa) and uses SI units. To convert, multiply an emu value by 4π to get the SI value.
 
 ### systematic error
 
@@ -335,7 +335,7 @@ The correction for the ground not being flat. The Bouguer correction models ever
 
 ### tidal effect
 
-The sun and moon pull on the gravimeter and on the Earth. The effect is a few tenths of a milligal over a day. It can be predicted in advance, so a survey that needs to can separate it from the instrument's own drift; a short survey's base loop corrects the two together. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#corrections" target="_blank" rel="noopener">Corrections</a> (CC BY 4.0).
+The sun and moon pull on the gravimeter and on the Earth. The effect is a few tenths of a milligal over a day. It can be predicted in advance, so a survey that needs to can separate it from the instrument's own drift; a short survey's base loop corrects the two together. Course text: Burger Section 6.4.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#corrections" target="_blank" rel="noopener">Corrections</a> (CC BY 4.0).
 
 ### total field, F
 

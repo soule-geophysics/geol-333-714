@@ -42,16 +42,6 @@ uv run --with segyio --with scipy python scripts/trim_puente_hills_gather.py
 
 The SEG-Y must sit under `outputs/data/raw/puente_hills_carfax_hammer/` (gitignored).
 
-## Reproducibility: the HW5a first-break figure
+## Retired: the HW5a first-break figure
 
-`outputs/figures/geol333_hw5a_ffid4031_first_breaks.png` (published as `figures/geol333_hw5a_ffid4031_first_breaks.png`) is drawn from this CSV by `scripts/build_hw5a_first_break_figure.py`. The first-break marks are for illustration only; no number from them enters a calculation or an answer.
-
-- Search guide: the earliest coherent arrival on traces 21 to 48 m lines up with a straight line through the origin at about 343 m/s.
-- Noise level per trace: RMS amplitude from 20 to 10 ms before the guide time.
-- First break: the first sample from 10 ms before to 10 ms after the guide time whose absolute amplitude reaches 6 times the noise level. A trace with no such sample gets no mark.
-- Result: 33 of the 46 traces marked, from 18.5 ms at 6 m to 155.0 ms at 51 m. Unmarked: 8, 9, 10, 12, 40, 47 and 53 to 59 m.
-- Display: each trace multiplied by 1.5 and clipped at 0.6, so the weak first motion shows next to the stronger later arrivals. Traces 1 m apart.
-
-```
-uv run python scripts/build_hw5a_first_break_figure.py
-```
+From 2026-11-17 (ruling E7) until later the same day (ruling E8), HW5a showed a first-break figure drawn from this CSV. This record is a reflection survey and shows no head wave, so ruling E8 replaced that figure with a synthetic gather computed from the HW5a two-layer model (`scripts/build_hw5a_synthetic_gather_figure.py`). This CSV now serves HW5c only.

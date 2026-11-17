@@ -13,9 +13,17 @@ For the normal distribution: about 68% of values land within one standard deviat
 
 How close a result lands to the true value. Limited by systematic error; taking more readings does not improve it.
 
+### air wave
+
+The sound of the source, traveling through the air to the geophones. It is recorded with the ground motion, so it shows up on a seismic record. Sound in air is slow, about 0.33 km/s (the figure GPG gives on the page linked below). Even so, sound in air can be faster than a seismic wave in some surface materials. Burger says to look for the air wave on every record. In Burger's worked example, Table 2.4, the air wave reaches a geophone 60 m from the source at 179.10 ms, well after the direct wave at 40.00 ms. Course text: Burger Sections 2.1.4 and 2.2.8 (Fig. 2.20, Table 2.4). Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#wave-velocity-and-particle-velocity" target="_blank" rel="noopener">Wave Velocity and Particle Velocity</a> (CC BY 4.0).
+
 ### anomaly
 
 The difference between what we observe and what we can explain. The whole aim of a gravity survey is to explain as much as possible, so that what remains points at the buried body we are looking for. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#data-presentation-options" target="_blank" rel="noopener">Data presentation options</a> (CC BY 4.0).
+
+### attenuation
+
+The loss of a seismic wave's amplitude as it travels away from the source. Burger gives two main causes. The first is spherical spreading: the wave's energy spreads over a growing sphere, so energy falls off as 1/r² (one over r squared) and amplitude as 1/r (one over r), where r is the distance from the source. The second is absorption: the rock takes up some of the wave's energy along the way. Burger writes absorption as `I = I₀e^(−qr)` (I equals I sub zero times e to the minus q r), where I is the energy intensity at distance r, I₀ is the intensity at the start and q is the absorption coefficient. Energy is also split at every boundary the wave meets. Course text: Burger Sections 2.3.1, 2.3.2 and 2.3.3, Eq. 2.28. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#attenuation" target="_blank" rel="noopener">Attenuation</a> (CC BY 4.0).
 
 ### base station
 
@@ -27,6 +35,10 @@ In magnetics, the base station is a magnetometer left at one spot, logging the f
 
 The weight on the end of a pendulum's string. Ours is a one-inch metal ball.
 
+### body wave
+
+A seismic wave that travels through the inside of Earth rather than along its surface. There are two kinds: P waves and S waves. Body waves travel faster than surface waves, so they reach a seismometer first. Course text: Burger Section 2.1.3. Further reading: Earle, <em>Physical Geology</em>, <a href="https://geo.libretexts.org/Bookshelves/Geology/Physical_Geology_(Earle)/11%3A_Earthquakes/11.03%3A_Measuring_Earthquakes" target="_blank" rel="noopener">11.3 Measuring Earthquakes</a> (CC BY 4.0); UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#body-waves" target="_blank" rel="noopener">Body Waves</a> (CC BY 4.0).
+
 ### Bouguer anomaly
 
 What remains of the difference between two gravity readings once the instrument and the stations' elevations have been accounted for: in our surveys, the drift removed, the field days tied to a common reference, the free-air correction added back and the slab correction subtracted. It is the quantity a survey interprets. It still contains everything the corrections did not remove, including whatever broad structure runs under the whole line, which is why a regional is usually separated from it before anything local is claimed. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#data-presentation-options" target="_blank" rel="noopener">Data presentation options</a> (CC BY 4.0).
@@ -34,6 +46,10 @@ What remains of the difference between two gravity readings once the instrument 
 ### Bouguer correction
 
 The correction that removes the pull of the rock lying between a station and the datum. The free-air correction treats that space as empty; this one models it as a flat slab of thickness h and density ρ whose attraction is 2πGρh, and subtracts it. We wrote it at the board as 0.04193 ρ h mGal, with ρ in g/cm³ and h in meters. It needs a density nobody measured, so the value used is a choice that has to be stated and defended. UBC-GIF, linked below, writes the same coefficient as 0.04191 rather than the 0.04193 we used at the board. The difference is the value of the gravitational constant G each was computed from, and it lands in the fourth significant figure, well below anything a survey of this size can resolve. Use the board form; the point is that a constant quoted to four figures still depends on a measurement somebody made. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#corrections" target="_blank" rel="noopener">Corrections</a> (CC BY 4.0).
+
+### bulk modulus, K
+
+How strongly a material resists being squeezed into a smaller volume. Burger defines it as the change in pressure divided by the fractional change in volume it causes, `K = ΔP/Δ` (K equals delta P over delta), where Δ is the change in volume divided by the starting volume. A large K means a material is hard to compress. K appears in the P-wave velocity and not in the S-wave velocity, so it is one reason P waves are faster. Course text: Burger Section 2.1.2, Eq. 2.7, and Section 2.1.4, Eq. 2.11. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#body-waves" target="_blank" rel="noopener">Body Waves</a> (CC BY 4.0).
 
 ### correlation
 
@@ -45,6 +61,18 @@ in which direction. Course text: OpenIntro Statistics Section 8.1. Video: [Line 
 The table of uncertainties a least-squares fit returns. The square roots of its diagonal
 entries are the standard errors of the slope and the intercept, which is where every fitted
 slope's error bar in this course comes from.
+
+### critical angle, θic
+
+The angle of incidence at which the refracted ray bends to 90° and travels along the boundary. It comes from Snell's law with the refracted angle set to 90°: `θic = sin⁻¹(V1/V2)` (theta i c equals the inverse sine of V1 over V2). A critical angle exists only when the lower layer is faster, V2 greater than V1. Burger's example in Table 2.3 uses 1500 m/s over 4000 m/s: the critical angle is 22°, and at 23° there is no refracted angle at all. At incidence beyond the critical angle, all of the energy is reflected. At the critical angle, the ray traveling along the boundary sets up the head wave. Course text: Burger Section 2.2.6, Eq. 2.27, Fig. 2.16 and 2.17. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/waves_at_interfaces.html#critical-angle" target="_blank" rel="noopener">Critical angle</a> (CC BY 4.0). It writes the critical angle as θ_c.
+
+### critical distance
+
+The distance from the source to the nearest point where the head wave reaches the surface. Head-wave energy leaves the boundary at the critical angle, starting from the point where a ray from the source first meets the boundary at that angle. Closer to the source than the critical distance, no head wave arrives at all. Burger writes it `x_crit` (x crit): `x_crit = 2 h1 / √((V2/V1)² − 1)` (x crit equals two h1 over the square root of the quantity V2 over V1 squared, minus one), where h1 is the thickness of the top layer. In Burger's Table 3.1 (1400 m/s over 4500 m/s), a top layer 10 m thick gives a critical distance of 6.55 m. Between the critical distance and the crossover distance, the head wave arrives after the direct wave. The first breaks there are still the direct wave. Course text: Burger Section 3.2.5 (Fig. 3.5, Eq. 3.25, Table 3.1).
+
+### crossover distance
+
+The distance from the source at which the direct wave and the head wave arrive at the same time. On a time-distance plot it is where the two lines cross. Closer to the source, the direct wave arrives first. Beyond the crossover distance, the head wave arrives first. Its path is longer, but it covers most of that path along the boundary at the faster velocity V2. In Burger's Table 3.1 (1400 m/s over 4500 m/s, a layer 10 m thick) the two lines cross between 27 m and 30 m. Course text: Burger Section 3.2.4, and Table 3.1 in Section 3.2.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/traveltimes.html" target="_blank" rel="noopener">Travel times</a> (CC BY 4.0).
 
 ### datum
 
@@ -65,6 +93,10 @@ The number that converts a gravimeter's dial reading into milligals. The instrum
 ### dipole
 
 Two nearby poles of equal strength and opposite sign. A magnetized body whose size is small compared with its distance from the sensor behaves as a dipole. So does the Earth's main field, to a first approximation. On the dipole's axis the field is `H_r = 2M/r³` (H sub r equals two M over r cubed; Burger Eq. 7.12), where M is the dipole's moment and r the distance from its center. Here H is Burger's symbol for field strength. It is a different quantity from the horizontal component, H. Doubling the distance cuts the field to one eighth. A gravity anomaly falls off as 1/r², so a magnetic anomaly from a compact body is narrower and dies away faster with depth. Course text: Burger Section 7.2.4. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#fields-due-to-a-magnetic-dipole" target="_blank" rel="noopener">Fields due to a magnetic dipole</a> (CC BY 4.0).
+
+### direct wave
+
+The wave that travels straight through the top layer from the source to a geophone, at the top layer's velocity V1. Its travel time is `t = x/V1` (t equals x over V1), where x is the distance from the source. On a time-distance plot it is a straight line through the origin with slope 1/V1 (one over V1). Near the source it is the first wave to arrive. Course text: Burger Section 2.2.8 (Fig. 2.20) and Section 3.1, Eq. 3.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/traveltimes.html" target="_blank" rel="noopener">Travel times</a> (CC BY 4.0).
 
 ### diurnal variation and the diurnal correction
 
@@ -90,6 +122,14 @@ The ± reported with a value: the range a repeat of the same experiment could re
 
 The difference between the mass of a buried body and the mass of host rock that would fill the same volume: the volume times the density contrast, `V Δρ` (V times delta rho). Gravity responds to the excess mass alone. A void or a low-density fill has a negative excess mass, a mass deficit, and produces a gravity low. The excess mass differs from the body's total mass, `V ρ_body` (V times the density of the body), which is what a mine would haul out. For a sphere, `M_e = (4/3)πR³Δρ` (M sub e equals four thirds pi R cubed delta rho), and the anomaly directly above the center is `G M_e / z²` (G M sub e over z squared). A small dense sphere and a larger, less dense sphere at the same depth with the same excess mass produce the same anomaly. Course text: Burger Section 6.5.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#what-is-actually-measured" target="_blank" rel="noopener">What is actually measured?</a> (CC BY 4.0). It writes the density contrast the other way round, host rock minus body.
 
+### Fermat's principle
+
+A wave travels between two points along the path that takes the least time. Burger uses the principle to show that the angle of reflection equals the angle of incidence, and again to derive Snell's law. Course text: Burger Sections 2.2.2, 2.2.3 (Eq. 2.18) and 2.2.4 (Eq. 2.25).
+
+### first break
+
+The moment the ground first moves at a geophone: the earliest arrival on its trace. Picking the first break on each trace gives one arrival time per geophone. Plotted against distance from the source, those times make the time-distance plot used in a refraction survey. Near the source the first break is the direct wave; beyond the crossover distance it is the head wave. Course text: Burger Section 3.2.6 (Fig. 3.6, Table 3.3). Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/seismic_data.html#signals-that-get-recorded" target="_blank" rel="noopener">Signals that get recorded</a> (CC BY 4.0). It also calls first breaks first arrivals.
+
 ### free-air correction
 
 The correction that accounts for a station sitting above or below the datum, treating everything in between as empty air. Gravity falls with distance from Earth's center at about 0.3086 mGal per meter, so the correction adds back what a station above the datum lost and subtracts from one below it. It is the free-air gradient applied to a real station's elevation. Applied on its own it leaves the rock between the station and the datum unaccounted for, which is what the Bouguer correction handles. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#corrections" target="_blank" rel="noopener">Corrections</a> (CC BY 4.0).
@@ -102,9 +142,17 @@ The rate gravity decreases with elevation: about 0.3086 mGal per meter (milligal
 
 `G` is the universal gravitational constant, `6.674 × 10⁻¹¹ m³ kg⁻¹ s⁻²`, the same everywhere in the universe. `g` is the strength of gravity where you stand, about `9.81 m/s²`, and it changes with latitude, elevation, and what sits underneath you. The course measures g; nature fixes G. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#fundamentals" target="_blank" rel="noopener">Fundamentals</a> (CC BY 4.0).
 
+### geophone
+
+The sensor of a land seismic survey. It is a small case with a spike that is pushed into the ground. Inside, a coil of wire sits on springs in the field of a magnet. When the ground moves, the coil and the magnet move relative to each other, and that motion produces a voltage. The recorder stores the voltage against time. A survey lays out a line of geophones at measured distances from the source. Course text: Burger Section 2.5.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/seismic_receivers.html" target="_blank" rel="noopener">Receivers</a> (CC BY 4.0).
+
 ### gravimeter
 
 The field instrument for gravity: a mass on a very soft spring in a rigid case. To take a reading, you turn a screw a known amount to bring the mass back to a fixed resting mark, and the screw's counter is the reading. It reads changes in g, in milligals. The What a Gravimeter Is page carries the full story. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#measuring-gravity" target="_blank" rel="noopener">Measuring gravity</a> and <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#instrumentation-part-i" target="_blank" rel="noopener">Instrumentation part I</a> (CC BY 4.0).
+
+### ground roll
+
+A surface wave from the source that travels along the ground. It is slower than the body waves, so it arrives late. In Burger's worked example, Table 2.4, ground roll reaches a geophone 60 m from the source at 88.89 ms, after the direct wave at 40.00 ms. Course text: Burger Section 2.2.8 (Fig. 2.20, Table 2.4). Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#surface-waves" target="_blank" rel="noopener">Surface Waves</a> (CC BY 4.0).
 
 ### the set of gravity corrections
 
@@ -118,6 +166,10 @@ A depth estimate read from an anomaly's width. The deeper a body, the broader an
 
 The horizontal distance from the peak (or trough, for a low) of an anomaly to the point where it has fallen to half its peak amplitude. The amplitude is measured from the background level, so the half level is the background plus half the amplitude. When the two sides of a profile differ, this course takes the half-width as the average of the two distances. That equals half the full width at half maximum. Burger writes it x½max (x sub one-half max). It is the input to the half-maximum technique. Course text: Burger Section 6.7.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#what-is-actually-measured" target="_blank" rel="noopener">What is actually measured?</a> (CC BY 4.0).
 
+### head wave
+
+The refracted arrival used in a refraction survey. A ray from the source strikes a boundary at the critical angle, and the refracted ray then travels along the boundary at the lower layer's velocity V2. As it travels, it sends energy back up into the top layer at the critical angle. That returning energy is the head wave. On a time-distance plot it is a straight line with slope 1/V2 (one over V2), and it meets the time axis above the origin. Beyond the crossover distance it is the first wave to arrive. A head wave forms only when the lower layer is faster. Burger also calls it the critically refracted wave. Course text: Burger Section 2.2.6 (Fig. 2.16) and Section 3.2.1, Eq. 3.15. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/traveltimes.html#refracted-ray-in-a-two-layered-earth" target="_blank" rel="noopener">Refracted ray in a two layered-earth</a> (CC BY 4.0).
+
 ### histogram
 
 A bar chart of a set of repeated measurements: each bar counts how many values landed in its slice of the number line. Course text: OpenIntro Statistics Section 2.1. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
@@ -126,6 +178,8 @@ A bar chart of a set of repeated measurements: each bar counts how many values l
 
 The rule that a spring's restoring force is proportional to how far it has been stretched, `F = −kx` (F equals minus k x), where k is the spring constant and the minus sign says the force opposes the stretch. It holds for small deformations, which is the elastic regime. A gravimeter is built on it: a mass hangs on a spring, a change in gravity changes the force on that mass, and the spring's length changes in proportion, so measuring a length becomes measuring gravity. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#measuring-gravity" target="_blank" rel="noopener">Measuring gravity</a> (CC BY 4.0).
 
+For rock, Burger writes Hooke's law as stress and strain: `σ = Eε` (sigma equals E times epsilon), where σ is the force per unit area, ε is the fractional change in length and E is Young's modulus. Seismic waves strain rock by tiny amounts, so rock follows this law as a wave passes. Course text: Burger Section 2.1.2, Eq. 2.4.
+
 ### horizontal component, H
 
 The horizontal part of the Earth's field, pointing toward magnetic north: `H = F cos i` (H equals F times cosine i), where F is the total field and i the inclination. It is largest at the magnetic equator and zero at the magnetic poles. The horizontal part of a buried body's own field, measured toward magnetic north, is written H_A. Course text: Burger Section 7.2.1, Eq. 7.9. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#earth-s-magnetic-field-source" target="_blank" rel="noopener">Earth's magnetic field (Source)</a> (CC BY 4.0).
@@ -133,6 +187,10 @@ The horizontal part of the Earth's field, pointing toward magnetic north: `H = F
 ### horizontal cylinder (simple-shape model)
 
 The model for a buried body much longer than it is wide, such as a tunnel, a buried channel or a pipe, with the profile crossing it at right angles. R is the cylinder's radius, z the depth to its axis, and Δρ (delta rho) the density contrast. Its anomaly is `Δg(x) = 2πGΔρR²z / (x² + z²)` (delta g of x equals two pi G delta rho R squared z, over x squared plus z squared), largest directly above the axis, where it equals `2πGΔρR² / z` (two pi G delta rho R squared over z). With distance from the axis it falls off more slowly than a sphere's anomaly. Depth rule: `z = x½` (z equals the half-width). Course text: Burger Section 6.5.3. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_basics.html#what-is-actually-measured" target="_blank" rel="noopener">What is actually measured?</a> (CC BY 4.0). It writes the density contrast the other way round, host rock minus body.
+
+### Huygens' principle
+
+Every point on a wave front acts as a small source that sends out its own spherical wavelet. A short time later, the new wave front is the surface that touches all of those wavelets. Each wavelet's radius is the velocity times the time step, so a wavelet in faster rock grows larger. Burger uses this construction to show how a wave front reflects at a boundary and how it bends when it crosses into rock of a different velocity. Course text: Burger Section 2.2.1 (Fig. 2.10), with its use in Sections 2.2.3 and 2.2.4.
 
 ### IGRF
 
@@ -150,6 +208,10 @@ The angle the Earth's field plunges below the horizontal, written i. In the sout
 
 Magnetization a rock acquires from the field it sits in today. It points along the Earth's field, and its strength is the susceptibility times the field, `I = kF_E` (I equals k times F sub E). Burger writes Eq. 7.7 as `I = kH` (I equals k times H), with H the whole field acting on the rock. Remove the field and induced magnetization goes away. The anomaly formulas in this course assume all magnetization is induced. Course text: Burger Section 7.1.5, Eq. 7.7. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#magnetization" target="_blank" rel="noopener">Magnetization</a> (CC BY 4.0). It writes the magnetization as M and the susceptibility as κ (kappa). In Burger, M is the dipole moment. Burger's symbol for the magnetization is I.
 
+### intercept time, ti
+
+The time where the head-wave line on a time-distance plot, extended back to zero distance, meets the time axis. Burger writes it `ti` (t i). No head wave arrives at zero distance. The line is drawn back to the time axis because the thickness of the top layer is calculated from that time. For one flat layer over a faster one, `h1 = (ti/2) V2 V1 / √(V2² − V1²)` (h1 equals ti over two, times V2 times V1, over the square root of V2 squared minus V1 squared). Put ti in seconds and both velocities in meters per second. Then h1 comes out in meters. A thicker top layer gives a larger intercept time. In Burger's Table 3.1 (1400 m/s over 4500 m/s, a layer 10 m thick) the head-wave line meets the time axis at 13.58 ms. The intercept time usually gives a better thickness than the crossover distance. It comes from one fitted line, and the crossover distance comes from two. With three flat layers, each head-wave line has its own intercept time (Burger Section 3.3). Course text: Burger Section 3.2.3, Eq. 3.17, Table 3.1 in Section 3.2.2, and Section 3.2.4 on the comparison with the crossover distance.
+
 ### inverse problem
 
 Working backward from observed data to the properties of the body that produced them, as in estimating a depth from an anomaly's width. The forward problem runs the other way: given a body, compute its anomaly. The simple-shape formulas are forward models, and the depth rules invert them. A gravity inverse problem has more than one answer, so an assumed shape or density is part of every result. Course text: Burger Section 6.7. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/foundations/foundations_inversion.html" target="_blank" rel="noopener">Inversion outline</a> (CC BY 4.0).
@@ -161,6 +223,10 @@ The correction for Earth being an ellipsoid rather than a sphere, and rotating. 
 ### least squares
 
 The fitting recipe that picks the line with the smallest total of squared vertical distances between the data points and the line. Week 2 works it on the board; the homework uses it wherever a slope carries physics. Course text: OpenIntro Statistics Section 8.2. Video: [Fitting a Line with Least Squares Regression](https://www.openintro.org/go?id=video_stat_linear_regression_fitting_least_squares_line).
+
+### Love wave
+
+A surface wave in which the ground moves horizontally, at right angles to the direction the wave travels. Its motion gets smaller with depth. Love waves are usually not generated in exploration work. Surface waves usually have larger amplitudes than body waves, and they do more damage. Course text: Burger Sections 2.1.3 and 2.1.4. Further reading: Earle, <em>Physical Geology, 2nd Edition</em>, <a href="https://opentextbc.ca/physicalgeology2ed/chapter/11-3-measuring-earthquakes/" target="_blank" rel="noopener">11.3 Measuring Earthquakes</a> (CC BY 4.0); UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#surface-waves" target="_blank" rel="noopener">Surface Waves</a> (CC BY 4.0).
 
 ### matrix
 
@@ -210,6 +276,10 @@ The bell-shaped curve that stacks of repeated measurements approach. Its width i
 A measurement that sits far from the rest of its stack. One is never deleted silently: the
 analysis states it, then shows the result with and without it. Course text: OpenIntro Statistics Section 2.1.5. Video: [Examining numerical data](https://www.openintro.org/go?id=video_stat_numerical_data).
 
+### P wave
+
+A seismic wave in which the ground moves back and forth in the same direction the wave travels, alternately squeezing and stretching the material. P stands for primary: it is the fastest seismic wave, so it arrives first at a seismograph. It travels through solids and liquids. It is also called a compressional wave. Course text: Burger Section 2.1.3. Further reading: Earle, <em>Physical Geology, 2nd Edition</em>, <a href="https://opentextbc.ca/physicalgeology2ed/chapter/9-1-understanding-earth-through-seismology/" target="_blank" rel="noopener">9.1 Understanding Earth Through Seismology</a> (CC BY 4.0); UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#body-waves" target="_blank" rel="noopener">Body Waves</a> (CC BY 4.0).
+
 ### pendulum length (l)
 
 The distance from the pivot to the **center** of the bob. A mark at the top of the bob sits half the bob's height above its center. Measuring to the mark and calling it `l` makes `g` come out low when you compute `g` from a single length, by more than the stopwatch scatter. In the multi-length fit of `T²` against `l` (T squared against l), the same constant offset moves the intercept and leaves the slope, so the `g` taken from the slope is unchanged.
@@ -217,6 +287,12 @@ The distance from the pivot to the **center** of the bob. A mark at the top of t
 ### period (T)
 
 The time for one complete swing. Our protocol times ten complete swings and divides by ten, which shares one stopwatch error across ten periods.
+
+For a wave, the period is the time between two crests passing one point. Its inverse is the frequency, `f = 1/T` (f equals one over T). Course text: Burger Section 2.1.1, Eq. 2.1.
+
+### Poisson's ratio, μ
+
+How much a material narrows sideways when it is stretched lengthwise, or bulges sideways when it is squeezed. It is the sideways strain divided by the lengthwise strain, with the sign set so the ratio is positive. Burger gives 0.5 as its upper limit. In Burger's Table 2.1 it runs from 0.040 to 0.271 for the rocks listed. With Young's modulus and density it gives both seismic velocities. On its own it fixes their ratio, V_P/V_S. Course text: Burger Section 2.1.2, Eq. 2.6, and Section 2.1.4, Eq. 2.13. Burger writes Poisson's ratio as μ (mu). GPG uses μ for the shear modulus.
 
 ### potential field
 
@@ -248,6 +324,14 @@ percent of the data sits. Course text: OpenIntro Statistics Section 2.1.
 
 Scatter that changes size and sign from trial to trial, like the small timing errors from pressing a stopwatch. Averaging N trials shrinks the uncertainty of the average by the square root of N.
 
+### ray (ray path)
+
+A line drawn at right angles to the wave fronts, pointing the way the wave's energy travels. A ray path is the route a ray takes from the source to a geophone, including where it bends or reflects at a boundary. Rays are a drawing tool: they make reflection and refraction easy to sketch and to compute with Snell's law. They stop giving correct answers when an object is not much larger than the wavelength. Course text: Burger Sections 2.1 and 2.2 (the ray limit is in Section 2.2.7). Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#waves-and-rays" target="_blank" rel="noopener">Waves and Rays</a> (CC BY 4.0).
+
+### Rayleigh wave
+
+A surface wave in which the ground moves in ellipses in the vertical plane, along the direction the wave travels, like a wave on water. The motion gets smaller with depth. Rayleigh waves are about 10 percent slower than S waves. Course text: Burger Section 2.1.3. Further reading: Earle, <em>Physical Geology, 2nd Edition</em>, <a href="https://opentextbc.ca/physicalgeology2ed/chapter/11-3-measuring-earthquakes/" target="_blank" rel="noopener">11.3 Measuring Earthquakes</a> (CC BY 4.0); UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#surface-waves" target="_blank" rel="noopener">Surface Waves</a> (CC BY 4.0).
+
 ### reduction density
 
 The density assumed for the rock between a station and the datum when the Bouguer correction is computed. Texts quote 2.67 g/cm³ for average continental crust, but the material under a particular survey may be nothing like that, and the anomaly that comes out depends on the number chosen.
@@ -255,6 +339,14 @@ The density assumed for the rock between a station and the datum when the Bougue
 ### reduction to the pole
 
 A processing step. From the anomaly measured at the survey's inclination, it computes the anomaly that would have been measured if the Earth's field were vertical, as at the magnetic pole. At the pole the H_A term of the total-field anomaly drops out, so the anomaly over a compact body is symmetric, with its peak over the body. The calculation assumes the magnetization is all induced. A body with strong remanent magnetization is not moved to the right place. Magnetic maps are often shown reduced to the pole so that each high sits over its source. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#reduction-to-pole" target="_blank" rel="noopener">Reduction to Pole</a> (CC BY 4.0).
+
+### reflected wave
+
+The part of a wave that bounces back up from a boundary between two layers. The angle of reflection equals the angle of incidence, both measured from the line at right angles to the boundary. The reflected wave travels at the top layer's velocity V1, like the direct wave, but its path down and back up is longer. So it arrives after the direct wave at every distance and is never a first break. In Burger's Table 2.4 the reflected wave reaches 60 m at 44.72 ms and the direct wave at 40.00 ms. Course text: Burger Section 2.2.3, Eq. 2.18, and Section 2.2.8 (Fig. 2.20, Table 2.4). Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/traveltimes.html#reflected-rays-single-layer" target="_blank" rel="noopener">Reflected rays - single layer</a> (CC BY 4.0).
+
+### refraction (refracted wave)
+
+The bending of a wave as it crosses a boundary into rock of a different velocity. The wave that continues into the lower layer is the refracted wave. Going into faster rock, the ray bends away from the line at right angles to the boundary. Going into slower rock, it bends toward that line. Snell's law gives the new angle. In Burger's Table 2.3 (1500 m/s over 4000 m/s), a ray arriving at 10° leaves at 28°. Course text: Burger Sections 2.2.4 and 2.2.5, Table 2.3. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/waves_at_interfaces.html#angles-of-reflection-and-refraction" target="_blank" rel="noopener">Angles of reflection and refraction</a> (CC BY 4.0).
 
 ### regional
 
@@ -280,6 +372,18 @@ What remains of the Bouguer anomaly once the regional is removed: the Bouguer an
 
 The magnetometer carried along the survey line, reading at each station. A second magnetometer stays at the base station. Each rover reading carries the time it was taken, so the base station's record at that time can correct it for the diurnal variation. Course text: Burger Section 7.4.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_processing.html#removal-of-time-variations" target="_blank" rel="noopener">Removal of time variations</a> (CC BY 4.0). It calls it the roving sensor.
 
+### S wave
+
+A seismic wave in which the ground moves at right angles to the direction the wave travels, shearing the material sideways. S stands for secondary: it is slower than the P wave, so it arrives second at a seismograph. It travels only through solids. It is also called a shear wave. Course text: Burger Section 2.1.3. Further reading: Earle, <em>Physical Geology, 2nd Edition</em>, <a href="https://opentextbc.ca/physicalgeology2ed/chapter/9-1-understanding-earth-through-seismology/" target="_blank" rel="noopener">9.1 Understanding Earth Through Seismology</a> (CC BY 4.0); UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#body-waves" target="_blank" rel="noopener">Body Waves</a> (CC BY 4.0).
+
+### seismic velocity
+
+The speed at which a seismic wave front moves through a material, in m/s. It is set by the material's elastic moduli and its density: `V_P = √((K + 4G/3)/ρ)` (V sub P equals the square root of K plus four thirds G, all over rho) and `V_S = √(G/ρ)` (V sub S equals the square root of G over rho). K is always positive, and G is positive in a solid. Both velocities divide by the same density, and `K + 4G/3` is always larger than `G`, so `V_P` is always greater than `V_S`. In Burger's Table 2.1, P-wave velocities run from 996 m/s in tuff to 6569 m/s in diabase. A refraction survey measures velocity, and velocity is the physical property contrast it senses. Course text: Burger Section 2.1.4, Eq. 2.11 and 2.12, and Table 2.1 in Section 2.1.2. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#body-waves" target="_blank" rel="noopener">Body Waves</a> (CC BY 4.0). It writes the shear modulus as μ (mu).
+
+### shear modulus, G
+
+How strongly a material resists shear, the change of shape that slides one face of a block past the opposite face. Burger defines it as the shear stress divided by the angle of shear it causes, and also calls it the rigidity modulus. G appears in both seismic velocities. A liquid has a shear modulus of zero, so an S wave cannot travel through it. Course text: Burger Section 2.1.2, Eq. 2.8 (Fig. 2.6), and Section 2.1.4, Eq. 2.11 and 2.12. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#body-waves" target="_blank" rel="noopener">Body Waves</a> (CC BY 4.0). It writes the shear modulus as μ (mu). Burger uses μ for Poisson's ratio.
+
 ### shell theorem
 
 A round body whose density depends on how deep you are but not on which way you face pulls on anything outside it as if all its mass sat at its center. Layers are fine and the Earth is layered; a lump on one side is not. It is why the R in `g = GM/R²` (g equals G M over R squared) is the distance to the planet's center. Run the other way, the same result makes a buried sphere the simplest anomaly model: from outside, a sphere of radius R and density contrast Δρ pulls exactly like a point mass `M = (4/3)πR³Δρ` (M equals four thirds pi R cubed delta rho) sitting at its center. Newton proved it in the *Principia* (1687), Book I, Section XII, "Of the attractive forces of spherical bodies": nothing pulls a body placed inside a shell (Prop. LXX), and from outside, a shell pulls as though its mass sat at the center (Prop. LXXI). A layered planet is a stack of shells, which is why the layers do not matter. Further reading: [Newton's *Principia*, Book I, Section XII](https://en.wikisource.org/wiki/The_Mathematical_Principles_of_Natural_Philosophy_(1729)/Book_1/Section_12) in Motte's 1729 translation, public domain; Turcotte & Schubert, *Geodynamics* (2nd ed.), Section 5-6, Eq. 5.99 for the buried-sphere case.
@@ -295,6 +399,10 @@ The two numbers a line fit returns. In this course the slope carries the physics
 ### small-angle approximation
 
 `sin θ ≈ θ` (sine theta is about theta, with theta in radians) for swings under about 15 degrees. It is what makes `T = 2π√(l/g)` (T equals two pi root l over g) true, and it is why the lab procedure keeps the swing angle small.
+
+### Snell's law
+
+The rule for how much a ray bends when it crosses a boundary between two velocities: `sin θ1 / sin θ2 = V1 / V2` (the sine of the angle of incidence over the sine of the angle of refraction equals V1 over V2). Both angles are measured from the line at right angles to the boundary. V1 is the velocity on the incoming side and V2 the velocity on the far side. Burger derives it two ways, from Huygens' principle and from Fermat's principle. It also holds when an incoming P wave produces a refracted S wave, with the P velocity on one side and the S velocity on the other. Course text: Burger Section 2.2.4, Eq. 2.21 and 2.25, and Section 2.2.5. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/waves_at_interfaces.html#angles-of-reflection-and-refraction" target="_blank" rel="noopener">Angles of reflection and refraction</a> (CC BY 4.0).
 
 ### sphere (simple-shape model)
 
@@ -317,6 +425,10 @@ The typical distance of one measurement from the mean of its stack. It reports t
 
 A place where a reading is taken. A survey is a planned set of stations. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#field-procedures" target="_blank" rel="noopener">Field procedures</a> (CC BY 4.0).
 
+### surface wave
+
+A seismic wave that travels along Earth's surface. Surface waves form when body waves reach the surface. Love waves and Rayleigh waves are the two kinds. They travel more slowly than body waves, so they arrive last. They usually shake the ground hardest and do the most damage. Course text: Burger Section 2.1.3. Further reading: Earle, <em>Physical Geology</em>, <a href="https://geo.libretexts.org/Bookshelves/Geology/Physical_Geology_(Earle)/11%3A_Earthquakes/11.03%3A_Measuring_Earthquakes" target="_blank" rel="noopener">11.3 Measuring Earthquakes</a> (CC BY 4.0); UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#surface-waves" target="_blank" rel="noopener">Surface Waves</a> (CC BY 4.0).
+
 ### survey loop
 
 Read the base station, read the survey stations, then read the base station again. The gap between the two base readings is the drift, and each station gets a correction sized by when it was read. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#field-procedures" target="_blank" rel="noopener">Field procedures</a> (CC BY 4.0).
@@ -336,6 +448,10 @@ The correction for the ground not being flat. The Bouguer correction models ever
 ### tidal effect
 
 The sun and moon pull on the gravimeter and on the Earth. The effect is a few tenths of a milligal over a day. It can be predicted in advance, so a survey that needs to can separate it from the instrument's own drift; a short survey's base loop corrects the two together. Course text: Burger Section 6.4.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/gravity/gravity_data.html#corrections" target="_blank" rel="noopener">Corrections</a> (CC BY 4.0).
+
+### time-distance plot (travel-time curve)
+
+A graph of arrival time against distance from the source, one point per geophone. Time is on the vertical axis, usually in ms. Distance is on the horizontal axis, in m. Each kind of wave plots as its own line or curve. For a straight line, the slope is one over the velocity, so `V = 1/slope` (V equals one over the slope). With time in milliseconds and distance in meters, Burger's working rule is `V = 1000/slope` (V in m/s equals 1000 divided by the slope). The direct wave plots as a line through the origin, and the head wave as a line with a smaller slope. Burger calls this graph a travel-time curve. Course text: Burger Section 2.2.8 (Fig. 2.21) and Section 3.1, Eq. 3.2 to 3.5. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/traveltimes.html" target="_blank" rel="noopener">Travel times</a> (CC BY 4.0).
 
 ### total field, F
 
@@ -361,6 +477,18 @@ The vertical part of the Earth's field, positive downward: `Z = F sin i` (Z equa
 ### volume, V, and the product k times V
 
 In the sphere's anomaly (Burger Eqs. 7.36 and 7.37), the radius and the susceptibility enter only through the front factor `(4/3)πR³ kF_E` (four thirds pi R cubed, times k, times F sub E). The `(4/3)πR³` part is the sphere's volume, V. At one depth and one site, two spheres with the same k times V give the same anomaly at every station. The width of the anomaly gives the depth. The amplitude gives only k times V: a small, strongly magnetic body and a large, weakly magnetic one cannot be told apart from the profile alone. A drill hole, a measured susceptibility or the geology decides between them. Gravity has the same limit with the excess mass. Course text: Burger Section 7.5.4. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/magnetics/magnetics_basic_principles.html#magnetization" target="_blank" rel="noopener">Magnetization</a> (CC BY 4.0).
+
+### wave front
+
+The surface that joins every point a seismic wave has reached at one moment. From a small source in uniform rock it is a sphere that grows outward. Rays are drawn at right angles to the wave fronts. Course text: Burger Section 2.1 and Section 2.2.1. Further reading: UBC-GIF, <em>Geophysics for Practicing Geoscientists</em>, <a href="https://gpg.geosci.xyz/content/seismic/wave_basics.html#waves-and-rays" target="_blank" rel="noopener">Waves and Rays</a> (CC BY 4.0). It spells it "wavefront".
+
+### wavelength, λ
+
+The distance between two neighboring points of a wave at the same stage of its cycle, for instance from one crest to the next. Wavelength, frequency and velocity are tied by `V = fλ` (V equals f times lambda). The frequency f is the number of cycles per second, in hertz (Hz), and is one over the period: `f = 1/T` (f equals one over T). Burger's example: in saturated sediment at 1500 m/s, a 10 Hz wave has a wavelength of 150 m. Course text: Burger Section 2.1.1, Eq. 2.1 and 2.3, and the example at the end of Section 2.1.4.
+
+### Young's modulus, E
+
+How strongly a material resists being stretched or squeezed along one direction. It is the stress divided by the strain it causes, `σ = Eε` (sigma equals E times epsilon), where σ is the stress and ε the strain. This is Hooke's law in the form Burger uses for rock. Burger's Table 2.1 lists E for each rock in units of 10¹¹ N/m² (ten to the eleven newtons per square meter). With density and Poisson's ratio, E gives both seismic velocities. Course text: Burger Section 2.1.2, Eq. 2.4, Table 2.1, and Section 2.1.4, Eq. 2.11 and 2.12.
 
 ### z-score
 

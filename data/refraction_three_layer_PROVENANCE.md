@@ -1,7 +1,7 @@
 # `refraction_three_layer.csv`: Provenance
 
 ## Source
-**Synthetic.** This dataset is generated, not measured. It supports the three-layer half of HW5b (Burger §3.3 and §3.4; rulings of 2026-11-05 and 2026-11-06). It carries no external license constraint and is fully reproducible from the script.
+**Synthetic.** This dataset is generated, not measured. It supports the three-layer half of HW5b (Burger §3.3 and §3.4). It carries no external license constraint and is fully reproducible from the script.
 
 ## Generator
 `scripts/generate_refraction_data.py` (`build_three_layer`). Regenerate all three HW5 files with:

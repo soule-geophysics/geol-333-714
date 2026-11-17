@@ -1,7 +1,7 @@
 # `refraction.csv`: Provenance
 
 ## Source
-**Synthetic.** This dataset is generated, not measured. It supports HW5a and the two-layer half of HW5b (rulings of 2026-11-05 and 2026-11-06). It carries no external license constraint and no `{{INSTRUCTOR VERIFIES}}` flag: it is fully reproducible from the script, exactly like `pendulum_sample.csv`.
+**Synthetic.** This dataset is generated, not measured. It supports HW5a. It carries no external license constraint and is fully reproducible from the script, exactly like `pendulum_sample.csv`.
 
 ## Generator
 `scripts/generate_refraction_data.py`. Regenerate with:
@@ -24,4 +24,4 @@ The generator prints a preview and a self-recovery sanity check (recovers v1, v2
 
 `first_break_ms` and `travel_time_s` carry the same measurement in two units. HW5 fits `travel_time_s` (so the slope comes out in s/m and `1/slope` is directly m/s); `first_break_ms` is provided because field seismographs report first breaks in milliseconds.
 
-24 rows, one forward spread. The same script also writes `refraction_three_layer.csv` and `reflection_one_layer.csv` (HW5b and HW5c), each with its own provenance file; generating them did not change this file. The arc rulings of 2026-11-05 exclude dipping layers and reversed spreads, so no reversed file is made.
+24 rows, one forward spread. The same script also writes `refraction_three_layer.csv` and `reflection_one_layer.csv` (HW5b and HW5c), each with its own provenance file; generating them did not change this file. The course covers flat layers and single spreads only, so no reversed file is made.

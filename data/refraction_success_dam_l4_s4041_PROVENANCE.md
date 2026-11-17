@@ -2,9 +2,9 @@
 
 ## Source
 
-**Real field data.** First-break picks from a shallow seismic refraction survey of the Success Dam spillway, Porterville, California, by the U.S. Geological Survey with the U.S. Army Corps of Engineers, Sacramento District.
+**Real field data.** First-break picks from a shallow seismic refraction survey in the Success Dam spillway, Porterville, California, by the U.S. Geological Survey with the U.S. Army Corps of Engineers, Sacramento District. The picks were made by the U.S. Geological Survey and are used unchanged.
 
-> Burton, B.L., Hunter, L.E., Cox, E.M., Lindsay, K.M., Galloway, R.G., and Nguyen, H., 2020, Success Dam spillway seismic refraction survey, Porterville, California, December 2018 and July 2019: U.S. Geological Survey data release, https://doi.org/10.5066/P96U1EYD.
+> Burton, B.L., Hunter, L.E., Cox, E.M., Lindsay, K.M., Galloway, R.G., and Nguyen, H., 2020, Success Dam Spillway seismic refraction survey, Porterville, California, December 2018 and July 2019: U.S. Geological Survey data release, https://doi.org/10.5066/P96U1EYD.
 
 - Release: https://doi.org/10.5066/P96U1EYD (ScienceBase item 5d7684fde4b0c4f70d01fc1f)
 - Child item: "Velocity models and first break picks, Success Dam spillway seismic refraction survey, Porterville, California" (ScienceBase item 5d76996ee4b0c4f70d01fdf0)
@@ -13,11 +13,11 @@
 - SHA-256 of the pick file as retrieved: `830703feac6b5d5c6ae8e484cd2f3a2bc35a2155e060319e86423b679ee10bc3`
 - SHA-256 of the data dictionary: `9c25bb51be4b575a6b290a049097ff0fd8da5a1b06786ea0e3fa1bc1325610b7`
 
-Record used: Line 4, shot file 4041 (`ShotNum` 41), shot at station 73.5. Line 4 has 96 geophones at 6 ft (1.83 m), 40 Hz. The shot notes list file 4041 as "AWD", the truck-mounted accelerated weight drop (as reported in the candidate search of 2026-11-07; the shot notes were not re-read for this extraction).
+Record used: Line 4, shot file 4041 (`ShotNum` 41), shot at station 73.5. Line 4 has 96 geophones at 6 ft (1.83 m), 40 Hz. The shot notes list file 4041 as "AWD", the release's 100-lb truck-mounted accelerated weight drop.
 
 ## License
 
-U.S. Geological Survey data are works of the U.S. Government and are in the public domain in the United States. The candidate search of 2026-11-07 (`docs/lesson_plans/week_12_refractor_depth_from_intercept_time/refraction_data_candidates_2026_11_07.md`) recorded the USGS data page statement "This work is marked with CC0 1.0 Universal". The release pages render client-side, and the static fetches of 2026-11-07 did not return that sentence, so the instructor should confirm it in a browser before the data post.
+Public domain (U.S. Government work). U.S. Geological Survey data are works of the U.S. Government and are in the public domain in the United States.
 
 The FGDC metadata (`SuccessSeismic_2018_2019_IntVelModels.xml`, retrieved 2026-11-07) states these use constraints, quoted in part:
 

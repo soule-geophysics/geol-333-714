@@ -7,6 +7,7 @@
 > Pratt, T.L., 2026, Seismic reflection profiles across the Puente Hills fault zone, Los Angeles, California: U.S. Geological Survey data release, https://doi.org/10.5066/P1XIR92T.
 
 - Release: https://doi.org/10.5066/P1XIR92T (ScienceBase item 68dac499d4be021b36eb644f)
+- Data credit (release metadata): James Dolan, University of Southern California; John Shaw, Harvard University.
 - Archive: `Carfax_hammer.zip` (211 MB), retrieved 2026-11-07; file used `Carfax_hammer/shots_w_geom2.sgy` (geometry in the trace headers)
 - Acquisition (`acquisition_parameters.txt` in the release): sledgehammer, 2 hits per station, 60 channels, 1 m geophone and shot spacing, source at geophone 1 (end-on spread, offsets 0 to 59 m), 0.5 ms sampling, 0.5 s records.
 

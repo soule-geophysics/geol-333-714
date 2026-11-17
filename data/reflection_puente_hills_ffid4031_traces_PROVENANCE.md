@@ -22,9 +22,9 @@ The release metadata (`useconst`, retrieved 2026-11-07) reads: "These data are m
 | Column | Unit | Meaning |
 |---|---|---|
 | `time_ms` | ms | Time after the hammer blow, 0 to 200 ms in 0.5 ms steps (401 rows) |
-| `6` ... `59` | none | One column per live geophone, named by its offset from the source in meters: the band-passed ground motion, scaled so the largest absolute value in the column is 1 |
+| `6` ... `59` | none | One column per live geophone, named by its offset from the source in meters: the band-passed ground motion in SEG-Y amplitude units (digitizer counts after filtering), unscaled |
 
-46 trace columns, offsets 6 to 59 m. The 11 dead traces (offsets 3, 4, 5, 19, 20, 33, 34, 35, 49, 50 and 52 m) are left out, as are offsets 0 to 2 m. File size 138 KB. SHA-256 of this CSV: `7dcd0bcff450d647eb536a26dfebec432b139afd0fbe8633ebf3fe9535ee44e6`.
+46 trace columns, offsets 6 to 59 m. The 11 dead traces (offsets 3, 4, 5, 19, 20, 33, 34, 35, 49, 50 and 52 m) are left out, as are offsets 0 to 2 m. File size 112 KB. SHA-256 of this CSV: `25a3142cc270ef68d8a48c9b0036f09e471b923a617b508e0e3f89fef34adee5`.
 
 ## Reproducibility: processing
 
@@ -34,7 +34,7 @@ Script: `scripts/trim_puente_hills_gather.py`. Tests: `tests/test_trim_puente_hi
 2. Dead-trace rule (the rule of the reflection picks): a trace is dead if its RMS amplitude over the full 0.5 s record is under 10 percent of the shot median. Dead traces are dropped.
 3. Band-pass 60 to 300 Hz, 4-pole Butterworth, zero phase (`scipy.signal.sosfiltfilt`), on the full record. This is the band the reflection picks were made in, so each pick sits on the peak it was made on.
 4. Keep offsets of 6 m or more and samples from 0 to 200 ms. The picks start at 6 m and end at 181 ms.
-5. Gain: none in time. Each trace is divided by its largest absolute value in the 0 to 200 ms window, so every column peaks at 1 and the traces can be drawn side by side. Relative amplitudes between traces are not kept. Values rounded to 4 decimals.
+5. Gain and scaling: none. The values keep the SEG-Y amplitude units, so the relative amplitudes between traces are true (largest absolute value about 1.0e5 near the source, about 1.7e2 at 59 m). Values rounded to 1 decimal. Revised 2026-11-17 (ruling E10): the first version scaled each trace to a peak of 1, which hid the amplitude decay with offset and made one display gain impossible.
 
 ```
 uv run --with segyio --with scipy python scripts/trim_puente_hills_gather.py

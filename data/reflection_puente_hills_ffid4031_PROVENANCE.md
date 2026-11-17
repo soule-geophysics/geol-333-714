@@ -15,7 +15,7 @@ Record used: field file 4031, source at x = 116 m on the profile. The picks were
 
 ## License
 
-The release metadata (`useconst`, retrieved 2026-11-07) reads: "These data are marked with a Creative Commons Zero v1.0 Universal (CC0-1.0) public domain dedication and do not have any use constraints." Credit: U.S. Geological Survey, Pratt (2026).
+The release metadata (`useconst`, retrieved 2026-11-07) reads: "These data are marked with a Creative Commons Zero v1.0 Universal (CC0-1.0) public domain dedication and do not have any use constraints." Credit: U.S. Geological Survey, Pratt (2026). Confirmed on the release landing page by the instructor, 2026-11-17: "This work is marked with the Creative Commons Zero v1.0 Universal (CC0-1.0) public domain dedication; https://creativecommons.org/publicdomain/zero/1.0/."
 
 ## Columns
 

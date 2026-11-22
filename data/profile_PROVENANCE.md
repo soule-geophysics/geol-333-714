@@ -3,7 +3,9 @@
 ## Source
 Parsekian, A. (n.d.). *IGUaNA Unit 3: Gravity and Magnetics Field Data Exercises, Part 1 (USF GeoPark sinkhole gravity transect).* Science Education Resource Center, Carleton College.
 URL: <https://serc.carleton.edu/iguana/teaching_materials/grav_mag/unit3.html>
-Original file: `iguana_gravity_lab.v5.xlsx` (preserved at `outputs/data/raw/iguana_part1_geopark_sinkhole.xlsx`).
+Original file: `iguana_gravity_lab.v5.xlsx` (preserved at `iguana_part1_geopark_sinkhole.xlsx`).
+
+`iguana_part1_geopark_sinkhole.xlsx` is in the course build repository, not published here.
 
 ## Survey context
 Linear gravity transect across a known karst sinkhole at the University of South Florida GeoPark, Tampa, FL. Survey ran in **three field sessions**:
@@ -23,6 +25,8 @@ CC-BY-NC-SA 4.0 (per SERC reuse model). Attribution to A. Parsekian, University 
 
 ## Citation block (paste into HW2 notebook header, `HW2_profile.ipynb`)
 > Profile gravity dataset: Parsekian, A. (n.d.). IGUaNA Unit 3: Gravity and Magnetics Field Data Exercises, Part 1 (USF GeoPark sinkhole survey). Science Education Resource Center, Carleton College. CC-BY-NC-SA 4.0. https://serc.carleton.edu/iguana/teaching_materials/grav_mag/unit3.html
+
+`HW2_profile.ipynb` is in the course build repository, not published here.
 
 ## Columns
 | name | unit | description |
@@ -55,4 +59,4 @@ CC-BY-NC-SA 4.0 (per SERC reuse model). Attribution to A. Parsekian, University 
 - Rounded UTM coords to 3 dp, lat/lon to 6 dp, gravity/SD to 6 dp.
 
 ## Reproducibility
-`scripts/convert_iguana_xlsx_to_csv.py` regenerates this CSV from the .xlsx in `outputs/data/raw/`. Run with `uv run scripts/convert_iguana_xlsx_to_csv.py`.
+`convert_iguana_xlsx_to_csv.py` regenerates this CSV from the .xlsx in the course build repository.

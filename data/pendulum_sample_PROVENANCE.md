@@ -1,10 +1,12 @@
 # `pendulum_sample.csv`: Provenance
 
 ## Source
-Synthetic dataset for HW0 (Module 1, Pendulum Gravity). Not an external dataset: produced by `scripts/generate_pendulum_data.py` with a fixed RNG seed.
+Synthetic dataset for HW0 (Module 1, Pendulum Gravity). Not an external dataset: produced by `generate_pendulum_data.py` with a fixed RNG seed.
+
+`generate_pendulum_data.py` is in the course build repository, not published here.
 
 ## License
-Instructor-created course material (GEOL 333 / 714, Fall 2026). No external license or attribution constraint; free to post and redistribute as course content.
+Instructor-created course material (GEOL 333 / 714, Fall 2026). No external license or attribution constraint; free to post and redistribute as course content. Instructor-created course data, released under CC BY 4.0 with the rest of this repository.
 
 ## Columns
 | name | unit | description |
@@ -17,4 +19,6 @@ The Wk 2 in-class file `pendulum_inclass.csv` uses the same length convention wi
 columns (`station,trial,length_m,t10_s,period_s`); see `pendulum_inclass_PROVENANCE.md`.
 
 ## Reproducibility
-`scripts/generate_pendulum_data.py` regenerates this CSV deterministically (seed 333). Run with `uv run --with numpy --with pandas python scripts/generate_pendulum_data.py`.
+`generate_pendulum_data.py` regenerates this CSV deterministically (seed 333).
+
+`generate_pendulum_data.py` is in the course build repository, not published here.

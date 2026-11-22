@@ -1,6 +1,6 @@
 # GEOL 333 / 714: Geophysical Exploration Methods, Student Materials
 
-Course developed using Anthropic tools.
+Course developed using Anthropic tools. Notebook code, data generators and figures were drafted with Claude and reviewed and revised by the instructor.
 
 Student-facing Google Colab notebooks and datasets for GEOL 333 (undergraduate) and GEOL 714 (graduate), Geophysical Exploration Methods, Queens College, CUNY. Instructor: Dax Soule.
 
@@ -24,7 +24,7 @@ This repository is a public, read-only content shelf. **No rosters, names, IDs, 
 
 ## License
 
-Course materials in this repository are licensed **CC BY 4.0** (see `LICENSE`). Third-party content (for example, textbook figures) is cited and linked, not redistributed. Datasets carry their own licenses, noted in their provenance files.
+Text and figures in this repository are licensed **CC BY 4.0** (see `LICENSE`). The code in the notebooks is also available under the **MIT License** (see `LICENSE-CODE`). Instructor-created course datasets are released under CC BY 4.0 with the rest of this repository. Third-party datasets keep their own licenses, noted in their provenance files. Third-party content (for example, textbook figures) is cited and linked, not redistributed.
 
 ## Source
 

@@ -3,7 +3,9 @@
 ## Source
 Parsekian, A. (n.d.). *IGUaNA Unit 3: Gravity and Magnetics Field Data Exercises, Part 3a (Stairwell gravity).* Science Education Resource Center, Carleton College.
 URL: <https://serc.carleton.edu/iguana/teaching_materials/grav_mag/unit3.html>
-Original file: `iguana_maggrav_unit3_part3a_data.v4.xlsx` (preserved at `outputs/data/raw/iguana_part3a_stairwell.xlsx`).
+Original file: `iguana_maggrav_unit3_part3a_data.v4.xlsx` (preserved at `iguana_part3a_stairwell.xlsx`).
+
+`iguana_part3a_stairwell.xlsx` is in the course build repository, not published here.
 
 ## License
 CC-BY-NC-SA 4.0 (per SERC reuse model). Attribution to A. Parsekian, University of Wyoming, IGUaNA / SERC.
@@ -35,4 +37,4 @@ CC-BY-NC-SA 4.0 (per SERC reuse model). Attribution to A. Parsekian, University 
 - Preserved the original `gound level` typo on the closing read for fidelity to source.
 
 ## Reproducibility
-`scripts/convert_iguana_xlsx_to_csv.py` regenerates this CSV from the .xlsx in `outputs/data/raw/`. Run with `uv run scripts/convert_iguana_xlsx_to_csv.py`.
+`convert_iguana_xlsx_to_csv.py` regenerates this CSV from the .xlsx in the course build repository.

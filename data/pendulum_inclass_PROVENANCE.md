@@ -42,9 +42,11 @@ The rubric's in-class column applies: no fixed numerical target beyond a positiv
 with units and an uncertainty, compared against 9.81 m/s². With 125 rows the per-length stacks are
 N = 25. The result of a run is whatever the data say, plus its error bar.
 
+`rubric_hw0.md` is in the course build repository, not published here.
+
 ## Reproducibility
-Transcribed by `scripts/build_pendulum_inclass.py` in the course build repository and validated by
-`scripts/check_pendulum_inclass.py`, which checks structure, arithmetic (`period_s` equals
+Transcribed by `build_pendulum_inclass.py` in the course build repository and validated by
+`check_pendulum_inclass.py`, which checks structure, arithmetic (`period_s` equals
 `t10_s / 10`) and physics (each period against `T = 2π√(l/g)`, reported as a row to re-read rather
 than as an error, since real scatter is expected).
 
